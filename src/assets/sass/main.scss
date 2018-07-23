@@ -13,7 +13,7 @@ a {
   position: relative;
 
   &:hover {
-  &::before {
+    &::before {
       width: 105%;
     }
   }

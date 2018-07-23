@@ -2,7 +2,7 @@
   <div class="header">
     <nav>
       <div class="nav-brand">
-        Casprine
+        <img src="../../assets/logo.svg" alt="" srcset="">
       </div>
       <div class="nav-items">
         <ul>
@@ -36,6 +36,6 @@
   // @ is an alias to /src
   export default {
     name: "Header",
-    components: {}
+    components: {},
   };
 </script>
