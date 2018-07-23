@@ -4,6 +4,9 @@
 // Header styling
 .header {
   padding: em(30);
+  @media (max-width: em(536)) {
+    padding: em(10);
+  }
 }
 
 nav {
@@ -11,13 +14,36 @@ nav {
   justify-content: center;
   flex-flow: wrap;
   align-items: center;
+
   .nav-brand {
     margin-right: auto;
     margin-left: em(30);
+    width: 100%;
+
+    @media (max-width: em(536)) {
+      margin-left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column;
+      * {
+        margin: em(5) 0;
+        // outline: 1px solid red;
+      }
+
+      .name {
+        font-size: em(22);
+      }
+      .title {
+        font-size: em(13);
+      }
+    }
   }
 
   .nav-items {
-    outline: 1px solid red;
+    @media (max-width: em(536)) {
+      display: none;
+    }
     ul {
       display: flex;
       justify-content: space-between;
@@ -50,8 +76,8 @@ nav {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: white;
-    outline: 1px solid $primary;
+    background-color: rgb(243, 243, 243);
+    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.1);
     // display: block;
   }
 
