@@ -17,6 +17,7 @@ nav {
   }
 
   .nav-items {
+    outline: 1px solid red;
     ul {
       display: flex;
       justify-content: space-between;
@@ -37,6 +38,40 @@ nav {
           font-size: em(17);
         }
       }
+    }
+  }
+}
+
+// Footer styling
+
+@media (max-width: em(536)) {
+  .footer {
+    z-index: 10;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    outline: 1px solid $primary;
+    // display: block;
+  }
+
+  .footer-nav {
+    padding: em(10);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .router-link-active {
+      span {
+        color: $secondary;
+      }
+    }
+
+    .footer-nav-item {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
     }
   }
 }
