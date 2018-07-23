@@ -12,6 +12,7 @@
 nav {
   display: flex;
   justify-content: center;
+  flex-flow: wrap;
   .nav-brand {
     margin-right: auto;
   }
@@ -28,9 +29,15 @@ nav {
         li {
           position: relative;
           list-style-type: none;
-          font-size: em(17);
+          font-size: em(16);
         }
       }
     }
+  }
+}
+
+.active {
+  &::before {
+    width: 105%;
   }
 }
