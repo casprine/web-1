@@ -1,0 +1,8 @@
+@import "partials/base";
+
+* {
+  outline: 1px solid red;
+  font-family: "Sans", $defualtFont;
+  color: $primary;
+  margin: 0;
+}
