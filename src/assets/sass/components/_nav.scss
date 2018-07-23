@@ -1,0 +1,36 @@
+// Navigation styling
+@import "../partials/em";
+
+// Header styling
+.header {
+  outline: 1px solid red;
+  // height: em(90);
+
+  padding: em(30);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  .nav-brand {
+    margin-right: auto;
+  }
+
+  .nav-items {
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      a {
+        margin: 0 em(15);
+
+        li {
+          position: relative;
+          list-style-type: none;
+          font-size: em(17);
+        }
+      }
+    }
+  }
+}

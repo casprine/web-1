@@ -4,4 +4,5 @@
   </div>
 </template>
 
-<style src="./assets/sass/main.scss"></style>
+<style src="./assets/sass/main.scss">
+</style>
