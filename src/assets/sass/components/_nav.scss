@@ -7,10 +7,6 @@
   @media (max-width: em(536)) {
     padding: em(10);
   }
-
-  * {
-    outline: 1px solid red;
-  }
 }
 
 nav {
@@ -22,9 +18,9 @@ nav {
   .nav-brand {
     margin-right: auto;
     margin-left: em(30);
-
     @media (max-width: em(536)) {
       margin-left: 0;
+      width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
