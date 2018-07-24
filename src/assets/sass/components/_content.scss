@@ -4,7 +4,7 @@
 .content {
   display: flex;
   justify-content: center;
-  margin: em(10);
+  margin: em(20);
   outline: 1px solid red;
 
   &-data {
@@ -21,25 +21,24 @@
   .right,
   .left {
     width: 45%;
-    border: 1px solid black;
+    // height: 200px;
+    padding: em(10) 0;
   }
 
   .left {
     font-size: em(18);
-    border-right: 1px solid red;
+    border-right: 1px solid $primary;
     padding-right: em(20);
   }
 
   .right {
     padding-left: em(20);
-  }
-  .divider {
-    width: 5%;
-    height: 1px;
-    border-radius: em(100);
-    border: none;
-    transform: rotate(90deg);
-    background: $ash;
+
+    .stacks {
+      outline: 1px solid red;
+    }
+
+
   }
 }
 
