@@ -2,11 +2,13 @@
 @import "partials/base";
 @import "partials/core";
 @import "views/home";
+@import "views/work";
 
 * {
   font-family: "Sans", $defualtFont;
   color: $primary;
   margin: 0;
+  
 }
 
 a {

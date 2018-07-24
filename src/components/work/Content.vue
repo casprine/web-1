@@ -1,7 +1,14 @@
 <template>
 <div class="work-content">
+<div class="hero">
+  <p> I current work @ <a href="" class="link">OmgDigital</a>  </p>
+  <p>as a frontend developer</p>
+</div>
+<div class="previous">
 
-    casprine
+</div>
+<div class="oss">
+</div>
 </div>
 </template>
 

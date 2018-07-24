@@ -1,0 +1,11 @@
+.hero {
+  font-size: em(25);
+  margin: 0 em(30);
+
+  p {
+    .link {
+      border: 1px solid red;
+      font-size: em(10);
+    }
+  }
+}
