@@ -10,9 +10,9 @@
                     <h2>Stack 👨‍💻 </h2>
                     <div class="stack">
                         <span class="stack-key"> Skills:</span> <span class="stack-data"> HTML, CSS(Sass),  Javascript, Git </span> <br>
-                        <span class="stack-key"> Frameworks:</span> <span class="stack-data"> React(Gatsby) , Vue </span> <br>
-                        <span class="stack-key"> Build Tools:</span> <span class="stack-data"> Gulp, parcel.js, webpack </span> <br>
-                        <span class="stack-key"> UI Tools:</span> <span class="stack-data"> Uxpin , Figma, Adobe XD </span> <br>
+                        <span class="stack-key"> Frameworks:</span> <span class="stack-data"> React(Gatsby), Vue </span> <br>
+                        <span class="stack-key"> Build Tools:</span> <span class="stack-data"> Gulp, Parceljs, Webpack </span> <br>
+                        <span class="stack-key"> UI Tools:</span> <span class="stack-data"> Uxpin, Figma, Adobe XD </span> <br>
                     </div>
                 </div>
                 <div class="links">

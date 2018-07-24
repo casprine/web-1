@@ -2,7 +2,7 @@
   <div class="header">
     <nav>
       <div class="nav-brand">
-        <img src="../../assets/logo.svg" alt="my-logo" srcset="">
+        <img src="../../assets/images/logo.svg" alt="my-logo" srcset="">
         <div class="mb-only name">Casprine Assempah</div>
         <div class="mb-only title">Frontend 🚀 & UI Developer 🔥</div>
       </div>

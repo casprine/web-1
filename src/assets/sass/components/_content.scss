@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   margin: em(20);
-  outline: 1px solid red;
+  // outline: 1px solid red;
 
   &-data {
     min-height: calc(100vh - 180px);
@@ -15,7 +15,7 @@
     align-items: center;
     width: 80%;
     outline: hidden;
-    outline: 1px solid red;
+    // outline: 1px solid red;
   }
 
   .right,
@@ -27,18 +27,89 @@
 
   .left {
     font-size: em(18);
-    border-right: 1px solid $primary;
+    border-right: 1px solid #d6d6d6;
     padding-right: em(20);
   }
 
   .right {
-    padding-left: em(20);
+    outline: 1px solid red;
+    padding-left: em(40);
 
     .stacks {
-      outline: 1px solid red;
+      h2 {
+        font-size: em(30);
+        font-weight: 100;
+        margin-bottom: em(10);
+      }
+
+      .stack {
+        span {
+          margin: em(5) 0;
+          font-size: em(16);
+          display: inline-block;
+        }
+
+        &-key {
+          padding-right: em(5);
+          color: $secondary;
+          // outline: 1px solid red;
+          width: 100px;
+        }
+        &-data {
+          &:hover {
+            color: lighten($color: $ash, $amount: 20);
+            text-decoration: line-through;
+          }
+        }
+      }
     }
 
+    .links {
+      outline: 1px solid red;
+      ul {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        li {
+          list-style: none;
+          // margin: 0 em(10);
+          a {
+            svg {
+              width: em(25);
+              // fill: $black;
+            }
+          }
+        }
 
+        // website link
+        .website {
+          &:hover {
+            fill: $primary;
+          }
+        }
+
+        // dribbble link
+        .dribbble {
+          &:hover {
+            fill: #ea4c89;
+          }
+        }
+
+        // github link
+        .github {
+          &:hover {
+            fill: #333;
+          }
+        }
+
+        // twitter
+        .twitter {
+          &:hover {
+            fill: #1da1f2;
+          }
+        }
+      }
+    }
   }
 }
 
