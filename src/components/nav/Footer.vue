@@ -28,9 +28,9 @@
 </template>
 
 <script>
-  // @ is an alias to /src
-  export default {
-    name: "Footer",
-    components: {}
-  };
+// @ is an alias to /src
+export default {
+  name: "Footer",
+  components: {}
+};
 </script>
