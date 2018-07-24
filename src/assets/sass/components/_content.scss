@@ -53,6 +53,10 @@
     }
     p {
       margin: em(10);
+
+      &:hover {
+        color: $ash;
+      }
     }
     span {
       color: $secondary;

@@ -4,7 +4,7 @@
             <div class="content-data">
                 <div class="left">
                     <p>Hi <span class="wave"> 👋</span>, I am Casprine.</p>
-                    <p> A <span class="tag">frontend</span> developer and <span> UI designer </span> @ <a href="https://omgdigitalinc.com/" class="link"> OmgDigital.</a> </p>
+                    <p> A <span class="tag">frontend</span> developer and <span> UI designer </span>  <a href="https://omgdigitalinc.com/" class="link"> @OmgDigital.</a> </p>
                     <p> I design and develop experiences that make people's lives simple. </p>
                     <p> I also write about my experiences and tutorials on my <a href="https://blog.casprine.xyz" class="link">Blog</a> </p>
                 </div>
