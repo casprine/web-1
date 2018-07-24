@@ -148,3 +148,17 @@
 * {
   // outline: 1px dotted green;
 }
+.bg {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  justify-content: flex-end;
+  // outline: 1px solid red;
+  bottom: 0;
+  left: 120px;
+
+  svg {
+    transform: rotate(14deg);
+  }
+}
