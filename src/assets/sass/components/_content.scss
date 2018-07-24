@@ -7,7 +7,7 @@
   margin: em(20);
 
   &-data {
-    min-height: calc(100vh - 180px);
+    min-height: calc(100vh - 280px);
     display: flex;
     flex-flow: wrap;
     justify-content: center;
@@ -26,10 +26,20 @@
     font-size: em(18);
     border-right: 1px solid #d6d6d6;
     padding-right: em(20);
+
+    p {
+      margin: em(10);
+    }
+    span {
+      color: $secondary;
+    }
+
+    .wave {
+      font-size: em(25);
+    }
   }
 
   .right {
-    outline: 1px solid red;
     padding-left: em(40);
 
     .stacks {
