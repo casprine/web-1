@@ -21,7 +21,7 @@
       </router-link>
       <a href="https://blog.casprine.xyz" class="footer-nav-item">
         <span>📝</span>
-        <span>  Blog </span>
+        <span>  Journal </span>
       </a>
     </div>
   </div>

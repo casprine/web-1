@@ -25,7 +25,7 @@
           </router-link>
           <a href="https://blog.casprine.xyz" class="nav-item">
             <li>
-              Blog
+              Journal
             </li>
           </a>
         </ul>
