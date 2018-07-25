@@ -18,6 +18,7 @@
   <div class="project-description">
    <p> Lorem ipsum dolor sit amet consectetur,
     adipisicing elit. Quaerat tenetur cum amet non nisi temporibus
+    adipisicing elit. Quaerat tenetur cum amet non nisi temporibus
     </p>
   </div>
   <div class="project-stacks">

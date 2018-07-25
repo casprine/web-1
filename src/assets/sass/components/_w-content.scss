@@ -39,20 +39,15 @@
   justify-content: center;
   h1 {
     font-weight: 100;
-    outline: 1px solid red;
     text-transform: capitalize;
   }
 
   .project {
     margin: em(10) 0;
-    width: 70%;
-    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
     transition: 0.2s ease;
     padding: em(10);
-
-    * {
-      outline: 1px solid red;
-    }
     &:hover {
       box-shadow: 0 18px 35px rgba(54, 91, 155, 0.1),
         0 8px 15px rgba(0, 0, 0, 0.07);
@@ -73,14 +68,21 @@
       img {
         width: em(80);
         // height: em(80);
+        border-radius: 10%;
         box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
       }
     }
 
     &-position {
-      outline: 1px solid red;
-      margin: em(10) 0;
+      margin: em(5) 0 em(10) 0;
       font-style: italic;
+      color: $ash;
+    }
+
+    &-description {
+      outline: 1px solid red;
+      color: $primary;
+      margin-bottom: em(10);
     }
   }
 }
