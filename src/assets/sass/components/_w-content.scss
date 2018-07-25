@@ -7,7 +7,7 @@
     // text-align: center;
 
     &:last-child {
-      margin: em(5) 0;
+      //   margin: em(5) 0;
       margin-left: em(23);
 
       color: $ash;
@@ -15,11 +15,12 @@
 
       .stack {
         margin: 0 em(2);
+        box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
         font-size: em(10);
         background: $secondary;
         color: white;
         padding: em(2) em(7);
-        border-radius: em(5);
+        border-radius: em(3);
         border: 0;
       }
     }
@@ -32,8 +33,36 @@
 
 .previous {
   margin-top: em(40);
+  padding-left: em(30);
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
   h1 {
     font-weight: 100;
     text-transform: capitalize;
+  }
+
+  .project {
+    margin: em(10) 0;
+    width: 70%;
+    border: 1px solid lighten($color: $primary, $amount: 20);
+    * {
+      outline: 1px dotted green;
+      padding: em(5);
+    }
+
+    &-details {
+      outline: 1px solid blue;
+      display: flex;
+      justify-content: flex-start;
+      align-content: center;
+
+      .name {
+        outline: 1px solid gold;
+        text-transform: capitalize;
+        font-size: em(20);
+        color: $primary;
+      }
+    }
   }
 }
