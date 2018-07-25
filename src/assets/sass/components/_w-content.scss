@@ -1,11 +1,27 @@
 .hero {
-  font-size: em(25);
-  margin: 0 em(30);
-
+  font-size: em(30);
+  margin: 0 em(15);
   p {
-    .link {
-      border: 1px solid red;
+    // text-align: center;
+
+    &:last-child {
+      margin: em(5) 0;
+      color: $ash;
       font-size: em(10);
+
+      .stack {
+        margin: 0 em(2);
+        font-size: em(10);
+        background: $secondary;
+        color: white;
+        padding: em(2) em(7);
+        border-radius: em(5);
+        border: 0;
+      }
+    }
+    .link {
+      font-size: em(10);
+      margin: 0 em(5);
     }
   }
 }
