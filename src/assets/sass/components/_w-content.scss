@@ -39,30 +39,48 @@
   justify-content: center;
   h1 {
     font-weight: 100;
+    outline: 1px solid red;
     text-transform: capitalize;
   }
 
   .project {
     margin: em(10) 0;
     width: 70%;
-    border: 1px solid lighten($color: $primary, $amount: 20);
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+    transition: 0.2s ease;
+    padding: em(10);
+
     * {
-      outline: 1px dotted green;
-      padding: em(5);
+      outline: 1px solid red;
+    }
+    &:hover {
+      box-shadow: 0 18px 35px rgba(54, 91, 155, 0.1),
+        0 8px 15px rgba(0, 0, 0, 0.07);
     }
 
     &-details {
-      outline: 1px solid blue;
       display: flex;
       justify-content: flex-start;
       align-content: center;
 
       .name {
-        outline: 1px solid gold;
         text-transform: capitalize;
         font-size: em(20);
         color: $primary;
+        margin-left: em(10);
       }
+
+      img {
+        width: em(80);
+        // height: em(80);
+        box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    &-position {
+      outline: 1px solid red;
+      margin: em(10) 0;
+      font-style: italic;
     }
   }
 }
