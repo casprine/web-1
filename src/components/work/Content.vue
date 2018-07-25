@@ -7,83 +7,28 @@
 <div class="previous">
 <h1>previous works</h1>
 <div class="projects">
-<div class="project">
-  <div class="project-details">
-    <img src="../../assets/images/sun.png" alt="afradio's image"> 
-    <p class="name flex"> AFradio</p>
-  </div>
-  <div class="project-position">
-    <p> Frontend Developer </p>
-  </div>
-  <div class="project-description">
-   <p> Lorem ipsum dolor sit amet consectetur,
-    adipisicing elit. Quaerat tenetur cum amet non nisi temporibus
-    adipisicing elit. Quaerat tenetur cum amet non nisi temporibus
-    </p>
-  </div>
-  <div class="project-stacks">
-    <span class="stack"> React </span>
-    <span class="stack"> React </span>
-    <span class="stack"> React </span>
-    <span class="stack"> React </span>
-  </div>
-</div>
 
 
-<div class="project">
-  <div class="project-details">
-    <img src="../../assets/images/sun.png" alt="afradio's image"> 
-    <p class="name flex"> AFradio</p>
-  </div>
-  <div class="project-position">
-    <p> Frontend Developer </p>
-  </div>
-  <div class="project-description">
-   <p> Lorem ipsum dolor sit amet consectetur,
-    adipisicing elit. Quaerat tenetur cum amet non nisi temporibus
-    adipisicing elit. Quaerat tenetur cum amet non nisi temporibus
-    </p>
-  </div>
-  <div class="project-stacks">
-    <span class="stack"> React </span>
-    <span class="stack"> React </span>
-    <span class="stack"> React </span>
-    <span class="stack"> React </span>
-  </div>
-</div>
-<div class="project">
-  <div class="project-details">
-    <img src="../../assets/images/sun.png" alt="afradio's image"> 
-    <p class="name flex"> AFradio</p>
-  </div>
-  <div class="project-position">
-    <p> Frontend Developer </p>
-  </div>
-  <div class="project-description">
-   <p> Lorem ipsum dolor sit amet consectetur,
-    adipisicing elit. Quaerat tenetur cum amet non nisi temporibus
-    adipisicing elit. Quaerat tenetur cum amet non nisi temporibus
-    </p>
-  </div>
-  <div class="project-stacks">
-    <span class="stack"> React </span>
-    <span class="stack"> React </span>
-    <span class="stack"> React </span>
-    <span class="stack"> React </span>
-  </div>
-</div>
-</div>
+<Project/>
+<Project/>
+<Project/>
+<Project/>
 
 
 </div>
 <div class="oss">
 </div>
 </div>
+</div>
 </template>
 
 
 <script>
+import Project from "./Project"
 export default {
-  name: "Content"
+  name: "Content",
+  components:  {
+    Project
+  }
 };
 </script>
