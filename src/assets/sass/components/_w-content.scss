@@ -1,11 +1,15 @@
 .hero {
   font-size: em(30);
-  margin: 0 em(15);
   p {
+    font-weight: 100;
+    margin-left: em(15);
+
     // text-align: center;
 
     &:last-child {
       margin: em(5) 0;
+      margin-left: em(23);
+
       color: $ash;
       font-size: em(10);
 
@@ -23,5 +27,13 @@
       font-size: em(10);
       margin: 0 em(5);
     }
+  }
+}
+
+.previous {
+  margin-top: em(40);
+  h1 {
+    font-weight: 100;
+    text-transform: capitalize;
   }
 }
