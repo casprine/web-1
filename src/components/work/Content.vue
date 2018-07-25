@@ -6,7 +6,7 @@
 </div>
 <div class="previous">
 <h1>previous works</h1>
-<a href="">
+<div class="projects">
 <div class="project">
   <div class="project-details">
     <img src="../../assets/images/sun.png" alt="afradio's image"> 
@@ -28,7 +28,52 @@
     <span class="stack"> React </span>
   </div>
 </div>
-</a>
+
+
+<div class="project">
+  <div class="project-details">
+    <img src="../../assets/images/sun.png" alt="afradio's image"> 
+    <p class="name flex"> AFradio</p>
+  </div>
+  <div class="project-position">
+    <p> Frontend Developer </p>
+  </div>
+  <div class="project-description">
+   <p> Lorem ipsum dolor sit amet consectetur,
+    adipisicing elit. Quaerat tenetur cum amet non nisi temporibus
+    adipisicing elit. Quaerat tenetur cum amet non nisi temporibus
+    </p>
+  </div>
+  <div class="project-stacks">
+    <span class="stack"> React </span>
+    <span class="stack"> React </span>
+    <span class="stack"> React </span>
+    <span class="stack"> React </span>
+  </div>
+</div>
+<div class="project">
+  <div class="project-details">
+    <img src="../../assets/images/sun.png" alt="afradio's image"> 
+    <p class="name flex"> AFradio</p>
+  </div>
+  <div class="project-position">
+    <p> Frontend Developer </p>
+  </div>
+  <div class="project-description">
+   <p> Lorem ipsum dolor sit amet consectetur,
+    adipisicing elit. Quaerat tenetur cum amet non nisi temporibus
+    adipisicing elit. Quaerat tenetur cum amet non nisi temporibus
+    </p>
+  </div>
+  <div class="project-stacks">
+    <span class="stack"> React </span>
+    <span class="stack"> React </span>
+    <span class="stack"> React </span>
+    <span class="stack"> React </span>
+  </div>
+</div>
+</div>
+
 
 </div>
 <div class="oss">

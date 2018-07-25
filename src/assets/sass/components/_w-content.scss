@@ -42,9 +42,16 @@
     text-transform: capitalize;
   }
 
+  .projects {
+    display: flex;
+    flex-flow: row wrap;
+    // justify-content: center;
+    align-items: center;
+  }
   .project {
-    margin: em(10) 0;
-    width: 50%;
+    margin: em(10);
+    width: 45%;
+    cursor: text;
     box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
     transition: 0.2s ease;
     padding: em(10);
@@ -74,15 +81,38 @@
     }
 
     &-position {
-      margin: em(5) 0 em(10) 0;
-      font-style: italic;
-      color: $ash;
+      margin: em(10) 0;
+
+      p {
+        color: $secondary;
+      }
     }
 
     &-description {
-      outline: 1px solid red;
       color: $primary;
       margin-bottom: em(10);
+    }
+
+    &-stacks {
+      padding: em(10) 0;
+
+      span {
+        margin: 0 em(5);
+        padding: em(2) em(7);
+        border: 1px solid $secondary;
+        text-transform: lowercase;
+        transition: 0.2s ease;
+        color: $secondary;
+        border-radius: em(3);
+        &:first-child {
+          margin: 0;
+        }
+        &:hover {
+          background: $secondary;
+          border: none;
+          color: white;
+        }
+      }
     }
   }
 }
