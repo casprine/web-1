@@ -10,10 +10,6 @@
 
 
 <Project/>
-<Project/>
-<Project/>
-<Project/>
-
 
 </div>
 <div class="oss">
@@ -24,10 +20,10 @@
 
 
 <script>
-import Project from "./Project"
+import Project from "./Project";
 export default {
   name: "Content",
-  components:  {
+  components: {
     Project
   }
 };

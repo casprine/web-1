@@ -49,15 +49,13 @@
     align-items: center;
   }
   .project {
-    outline: 1px solid blue;
-
     margin: em(10) em(10) 0 0;
     width: 45%;
     cursor: text;
     box-shadow: 0px 0px 1px 0px rgba(31, 35, 46, 0.15);
     transition: 0.2s ease;
-    min-height: em(200);
-    padding: em(10);
+    min-height: em(150);
+    padding: em(20);
     &:hover {
       box-shadow: 0 18px 35px rgba(54, 91, 155, 0.1),
         0 8px 15px rgba(0, 0, 0, 0.07);
@@ -76,10 +74,10 @@
       }
 
       img {
-        width: em(80);
-        // height: em(80);
-        border-radius: 10%;
-        box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+        width: em(50);
+        height: em(50);
+        // border-radius: 10%;
+        // box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
       }
     }
 
