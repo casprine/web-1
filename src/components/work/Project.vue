@@ -1,5 +1,6 @@
 <template>
-      <div class="project">
+<div class="projects">
+    <div class="project">
   <div class="project-details">
     <img :src="project.imgLink" :alt="project.name">
     <p class="name flex"> {{project.name}}</p>
@@ -11,8 +12,9 @@
    <p> {{ project.description }} </p>
   </div>
   <div class="project-stacks" id="stack">
- span.
+ <span> {{project.stacks}} </span>
   </div>
+</div>
 </div>
 </template>
 

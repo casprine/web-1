@@ -3,13 +3,8 @@
   p {
     font-weight: 100;
     margin-left: em(15);
-
-    // text-align: center;
-
     &:last-child {
-      //   margin: em(5) 0;
       margin-left: em(23);
-
       color: $ash;
       font-size: em(10);
 
@@ -39,7 +34,6 @@
   justify-content: center;
   h1 {
     font-weight: 100;
-    text-transform: capitalize;
   }
 
   .projects {
@@ -76,8 +70,6 @@
       img {
         width: em(50);
         height: em(50);
-        // border-radius: 10%;
-        // box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
       }
     }
 
