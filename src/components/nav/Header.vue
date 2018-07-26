@@ -18,11 +18,11 @@
               Work
             </li>
           </router-link>
-          <router-link to="design" class="nav-item">
+          <!-- <router-link to="design" class="nav-item">
             <li>
               Design
             </li>
-          </router-link>
+          </router-link> -->
           <a href="https://blog.casprine.xyz" class="nav-item">
             <li>
               Journal

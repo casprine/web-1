@@ -1,7 +1,7 @@
 <template>
       <div class="project">
   <div class="project-details">
-    <img :src="project.imgLink" :alt="project.name"> 
+    <img :src="project.imgLink" :alt="project.name">
     <p class="name flex"> {{project.name}}</p>
   </div>
   <div class="project-position">

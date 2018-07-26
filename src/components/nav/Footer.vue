@@ -13,12 +13,12 @@
           <span>Work </span>
         </div>
       </router-link>
-      <router-link to="design">
+      <!-- <router-link to="design">
         <div class="footer-nav-item">
           <span> 🎨 </span>
           <span> Design</span>
         </div>
-      </router-link>
+      </router-link> -->
       <a href="https://blog.casprine.xyz" class="footer-nav-item">
         <span>📝</span>
         <span>  Journal </span>
