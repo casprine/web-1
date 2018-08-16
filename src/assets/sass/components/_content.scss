@@ -28,7 +28,7 @@
   .left {
     width: 45%;
     padding: em(10) 0;
-    outline: 1px  sol
+    outline: 1px solid red;
 
     @media (max-width: em(536)) {
       width: 100%;

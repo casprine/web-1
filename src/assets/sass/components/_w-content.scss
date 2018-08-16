@@ -34,6 +34,12 @@
   h1 {
     font-weight: 300;
     color: $accent;
+
+    span {
+      font-size: em(10);
+      position: relative;
+      top: -2px;
+    }
   }
 
   .projects {
