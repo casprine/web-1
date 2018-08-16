@@ -34,6 +34,8 @@
   flex-flow: column wrap;
   justify-content: center;
   outline: 1px solid red;
+  padding-bottom: em(50);
+
   h1 {
     font-weight: 100;
   }
@@ -52,13 +54,15 @@
       0 20px 1px -9px rgba(0, 0, 0, 0.15);
     padding: 30px;
     min-height: em(150);
-    padding: em(20);
+    padding: em(5) em(20);
     border: 1px solid rgba(0, 0, 0, 0.15);
-    position: relative;
+
     &-details {
       display: flex;
       justify-content: flex-start;
       align-content: center;
+      outline: 1px solid red;
+      margin-bottom: em(10);
 
       .name {
         text-transform: capitalize;
@@ -68,22 +72,16 @@
       }
 
       img {
-        width: em(50);
-        height: em(50);
-      }
-    }
-
-    &-position {
-      margin: em(10) 0;
-
-      p {
-        color: $secondary;
+        width: em(25);
+        height: em(25);
       }
     }
 
     &-description {
       color: $primary;
       margin-bottom: em(10);
+      margin-top: em(10);
+      outline: 1px solid red;
     }
 
     &-stacks {
@@ -102,7 +100,6 @@
         }
         &:hover {
           background: $secondary;
-
           color: white;
         }
       }
