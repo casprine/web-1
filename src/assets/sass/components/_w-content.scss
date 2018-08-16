@@ -33,7 +33,6 @@
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  outline: 1px solid red;
   padding-bottom: em(50);
 
   h1 {
@@ -52,17 +51,25 @@
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 10px 0 -5px #eee,
       0 10px 1px -4px rgba(0, 0, 0, 0.15), 0 20px 0 -10px #eee,
       0 20px 1px -9px rgba(0, 0, 0, 0.15);
-    padding: 30px;
-    min-height: em(150);
+    min-height: em(100);
     padding: em(5) em(20);
     border: 1px solid rgba(0, 0, 0, 0.15);
+
+    &:hover {
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 10px 0 -5px #eee,
+        0 10px 1px -4px rgba(0, 0, 0, 0.15);
+    }
+
+    &-details,
+    &-description,
+    &-stacks {
+      margin: 20px 0;
+    }
 
     &-details {
       display: flex;
       justify-content: flex-start;
       align-content: center;
-      outline: 1px solid red;
-      margin-bottom: em(10);
 
       .name {
         text-transform: capitalize;
@@ -72,23 +79,17 @@
       }
 
       img {
-        width: em(25);
-        height: em(25);
+        width: em(20);
+        height: em(20);
       }
     }
 
     &-description {
       color: $primary;
-      margin-bottom: em(10);
-      margin-top: em(10);
-      outline: 1px solid red;
     }
 
     &-stacks {
-      padding: em(10) 0;
-
       span {
-        margin: 0 em(5);
         padding: em(2) em(7);
         border: 1px solid $secondary;
         text-transform: lowercase;
