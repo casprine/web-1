@@ -55,7 +55,8 @@
             stacks: ['js', 'typescript'],
             description: 'A tiny js lib that allows you to create unique containers per namespace in local-storage.',
             github: 'https://github.com/gwuah/axel',
-            liveUrl: '',
+            img: 'https://emojipedia-us.s3.amazonaws.com/thumbs/160/facebook/65/high-voltage-sign_26a1.png'
+
           },
           {
             name: 'axel',

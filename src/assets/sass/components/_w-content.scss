@@ -102,24 +102,9 @@
           font-size: 15px;
           margin: 0 5px;
           border-radius: 3px;
+          box-shadow: 0 5px 20px -7px $accent;
         }
       }
     }
   }
 }
-
-// span {
-//   padding: em(2) em(7);
-//   border: 1px solid $secondary;
-//   text-transform: lowercase;
-//   transition: 0.2s ease;
-//   color: $secondary;
-//   border-radius: em(3);
-//   &:first-child {
-//     margin: 0;
-//   }
-//   &:hover {
-//     background: $secondary;
-//     color: white;
-//   }
-// }
