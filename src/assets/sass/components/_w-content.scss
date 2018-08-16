@@ -1,5 +1,6 @@
 .hero {
   font-size: em(30);
+  outline: 1px solid red;
   p {
     font-weight: 100;
     margin-left: em(15);
@@ -32,18 +33,17 @@
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
+  outline: 1px solid red;
   h1 {
     font-weight: 100;
   }
 
   .projects {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-flow: row wrap;
   }
   .project {
-    margin: em(40) em(10) 0 0;
+    margin: em(30) em(20) 0 0;
     width: 350px;
     cursor: text;
     transition: 0.2s ease;
@@ -108,8 +108,4 @@
       }
     }
   }
-}
-
-* {
-  outline: 1px solid red;
 }
