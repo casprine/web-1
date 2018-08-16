@@ -4,7 +4,6 @@
     font-weight: 100;
 
     &:last-child {
-      margin-left: em(23);
       color: $ash;
       font-size: em(10);
 
@@ -15,6 +14,7 @@
         color: white;
         border-radius: em(3);
         border: 0;
+        color: white;
         padding: em(3) em(7);
       }
     }
@@ -26,7 +26,6 @@
 }
 
 .previous {
-  padding-left: em(30);
   margin-top: 10px;
   display: flex;
   flex-flow: column wrap;
