@@ -4,6 +4,9 @@
 // Header styling
 .header {
   padding: em(30);
+  * {
+    font-family: "sans";
+  }
   @media (max-width: em(536)) {
     padding: em(10);
   }

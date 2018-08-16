@@ -43,6 +43,7 @@
     font-size: em(18);
     border-right: 1px solid #d6d6d6;
     padding-right: em(20);
+    font-family: "sans";
 
     @media (max-width: em(865)) {
       width: 100%;
@@ -81,6 +82,7 @@
         font-size: em(30);
         font-weight: 100;
         margin-bottom: em(10);
+        font-family: "avenir";
       }
 
       .stack {
@@ -92,10 +94,12 @@
 
         &-key {
           padding-right: em(5);
+          font-family: "avenir";
           color: $secondary;
           width: 100px;
         }
         &-data {
+          font-family: "sans";
           &:hover {
             color: lighten($color: $ash, $amount: 20);
             text-decoration: line-through;

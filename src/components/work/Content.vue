@@ -1,11 +1,12 @@
 <template>
   <div class="work-content">
     <div class="hero">
-      <p>I work <a href="" class="link">@OmgDigital</a> as a frontend developer </p>
-      <p>currently working with <span class="stack">React</span>,<span class="stack">Firebase</span> and <span class="stack">Sass</span> </p>
+      <p class="sans">I work <a href="" class="link">@OmgDigital</a> as a frontend developer </p>
+      <p>currently working with
+         <span class="stack avenir">React</span>,<span class="stack">Firebase</span> and <span class="stack">Sass</span> </p>
     </div>
     <div class="previous">
-      <h1>Previous works</h1>
+      <h1 class="avenir">Previous works</h1>
       <div class="projects">
       <project-card v-for="(project , index) in projects" :key="index" :project="project" />
       </div>
