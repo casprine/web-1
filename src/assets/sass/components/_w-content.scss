@@ -69,6 +69,10 @@
         0 10px 1px -4px rgba(0, 0, 0, 0.15);
     }
 
+    @media (max-width: em(425)) {
+      margin: em(20) 0;
+    }
+
     &-details,
     &-description,
     &-stacks {
