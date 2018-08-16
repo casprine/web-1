@@ -32,6 +32,7 @@
     computed: {
       stack() {
         return this.project.stack.join(',')
+        
       }
     }
   }
