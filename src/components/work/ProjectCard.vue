@@ -11,8 +11,8 @@
       <div class="project-description">
         <p> {{ project.description }} </p>
       </div>
-      <div class="project-stacks" id="stack">
-        <span> {{project.stacks}} </span>
+      <div class="project-stacks">
+        <span> {{stack}} </span>
       </div>
     </div>
   </div>
@@ -20,7 +20,7 @@
 
 <script>
   export default {
-    name: "Project",
+    name: "ProjectCard",
     props: {
       project: Object
     },
@@ -28,6 +28,11 @@
       return {
         return: {}
       };
+    },
+    computed: {
+      stack() {
+        return this.project.stack.join(',')
+      }
     }
   }
 </script>
