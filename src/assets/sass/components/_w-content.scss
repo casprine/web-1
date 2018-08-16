@@ -54,6 +54,7 @@
     min-height: em(150);
     padding: em(20);
     border: 1px solid rgba(0, 0, 0, 0.15);
+    position: relative;
     &-details {
       display: flex;
       justify-content: flex-start;
@@ -107,4 +108,8 @@
       }
     }
   }
+}
+
+* {
+  outline: 1px solid red;
 }
