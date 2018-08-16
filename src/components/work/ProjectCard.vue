@@ -20,21 +20,20 @@
 
 
 <script>
-  export default {
-    name: "ProjectCard",
-    props: {
-      project: Object
-    },
-    data() {
-      return {
-        return: {}
-      };
-    },
-    computed: {
-      stack() {
-        return this.project.stack.join(',')
-      }
+export default {
+  name: "ProjectCard",
+  props: {
+    project: Object
+  },
+  data() {
+    return {
+      return: {}
+    };
+  },
+  computed: {
+    stack() {
+      return this.project.stack.join(",");
     }
   }
+};
 </script>
-
