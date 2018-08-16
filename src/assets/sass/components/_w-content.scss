@@ -1,5 +1,7 @@
 .hero {
   font-size: em(25);
+  text-align: center;
+  margin-bottom: em(25);
   p {
     font-weight: 100;
 
@@ -29,11 +31,13 @@
   margin-top: 10px;
   display: flex;
   flex-flow: column wrap;
-  justify-content: center;
+  justify-content: space-around;
   padding-bottom: em(50);
   h1 {
     font-weight: 300;
     color: $accent;
+    text-align: center;
+    margin-bottom: em(20);
 
     span {
       font-size: em(10);
@@ -45,6 +49,8 @@
   .projects {
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
   }
   .project {
     margin: 0 em(20) em(30) 0;
