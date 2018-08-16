@@ -4,6 +4,7 @@
   p {
     font-weight: 100;
     margin-left: em(15);
+
     &:last-child {
       margin-left: em(23);
       color: $ash;
@@ -27,7 +28,7 @@
 }
 
 .previous {
-  margin-top: em(40);
+  outline: 1px solid red;
   padding-left: em(30);
   display: flex;
   flex-flow: column wrap;
@@ -69,7 +70,7 @@
       display: flex;
       justify-content: flex-start;
       align-content: center;
-
+      font-family: "Avenir";
       .name {
         text-transform: capitalize;
         font-size: em(20);
@@ -85,6 +86,7 @@
 
     &-description {
       color: $primary;
+      font-family: "Sans";
     }
 
     &-stacks {
@@ -93,7 +95,7 @@
         justify-content: flex-start;
         margin: 0;
         padding: 0;
-
+        font-family: "Avenir";
         li {
           list-style: none;
           padding: em(3) em(7);

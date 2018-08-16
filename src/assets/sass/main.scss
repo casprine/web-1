@@ -5,12 +5,17 @@
 @import "views/work";
 
 * {
-  font-family: "Sans", $defualtFont;
   color: $primary;
   margin: 0;
-  // outline: 1px dotted red;
 }
 
+.sans {
+  font-family: "Sans", $defualtFont;
+}
+
+.avenir {
+  font-family: "Avenir", $defualtFont;
+}
 a {
   text-decoration: none;
 }
