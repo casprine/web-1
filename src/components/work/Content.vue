@@ -2,7 +2,7 @@
   <div class="work-content">
     <div class="hero">
       <p class="sans">I work <a href="" class="link">@OmgDigital</a> as a frontend developer </p>
-      <p>currently working with
+      <p class="sans" >currently working with
          <span class="stack avenir">React</span>,<span class="stack">Firebase</span> and <span class="stack">Sass</span> </p>
     </div>
     <div class="previous">

@@ -1,9 +1,7 @@
 .hero {
-  font-size: em(30);
-  outline: 1px solid red;
+  font-size: em(25);
   p {
     font-weight: 100;
-    margin-left: em(15);
 
     &:last-child {
       margin-left: em(23);
@@ -13,11 +11,11 @@
       .stack {
         margin: 0 em(2);
         font-size: em(10);
-        background: $secondary;
+        background: $accent;
         color: white;
-        padding: em(2) em(7);
         border-radius: em(3);
         border: 0;
+        padding: em(3) em(7);
       }
     }
     .link {
@@ -28,15 +26,15 @@
 }
 
 .previous {
-  outline: 1px solid red;
   padding-left: em(30);
+  margin-top: 10px;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   padding-bottom: em(50);
-
   h1 {
-    font-weight: 100;
+    font-weight: 300;
+    color: $accent;
   }
 
   .projects {
@@ -44,7 +42,7 @@
     flex-flow: row wrap;
   }
   .project {
-    margin: em(30) em(20) 0 0;
+    margin: 0 em(20) em(30) 0;
     width: 350px;
     cursor: text;
     transition: 0.2s ease;

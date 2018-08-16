@@ -5,6 +5,7 @@
   display: flex;
   justify-content: center;
   margin: em(20);
+  // outline: 2px solid red;
 
   @media (max-width: em(908)) {
     margin: 0;
