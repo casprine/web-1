@@ -6,7 +6,9 @@
     </div>
     <div class="previous">
       <h1>Previous works</h1>
+      <div class="projects">
       <project-card v-for="(project , index) in projects" :key="index" :project="project" />
+      </div>
       <div class="oss">
       </div>
     </div>
@@ -24,12 +26,40 @@
     data() {
       return {
         projects: [{
-          name: 'axel',
-          stack: ['js', 'typescript'],
-          description: 'A tiny js lib that allows you to create unique containers per namespace in local-storage.',
-          github: 'https://github.com/gwuah/axel',
-          liveUrl: '',
-        }]
+            name: 'axel',
+            stack: ['js', 'typescript'],
+            description: 'A tiny js lib that allows you to create unique containers per namespace in local-storage.',
+            github: 'https://github.com/gwuah/axel',
+            liveUrl: '',
+          },
+          {
+            name: 'axel',
+            stack: ['js', 'typescript'],
+            description: 'A tiny js lib that allows you to create unique containers per namespace in local-storage.',
+            github: 'https://github.com/gwuah/axel',
+            liveUrl: '',
+          },
+          {
+            name: 'axel',
+            stack: ['js', 'typescript'],
+            description: 'A tiny js lib that allows you to create unique containers per namespace in local-storage.',
+            github: 'https://github.com/gwuah/axel',
+            liveUrl: '',
+          }, {
+            name: 'axel',
+            stack: ['js', 'typescript'],
+            description: 'A tiny js lib that allows you to create unique containers per namespace in local-storage.',
+            github: 'https://github.com/gwuah/axel',
+            liveUrl: '',
+          },
+          {
+            name: 'axel',
+            stack: ['js', 'typescript'],
+            description: 'A tiny js lib that allows you to create unique containers per namespace in local-storage.',
+            github: 'https://github.com/gwuah/axel',
+            liveUrl: '',
+          }
+        ]
       }
     }
   };

@@ -1,5 +1,4 @@
 <template>
-  <div class="projects">
     <div class="project">
       <div class="project-details">
         <img :src="project.imgLink" :alt="project.name">
@@ -15,7 +14,7 @@
         <span> {{stack}} </span>
       </div>
     </div>
-  </div>
+  
 </template>
 
 <script>
