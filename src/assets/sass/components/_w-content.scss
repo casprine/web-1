@@ -11,7 +11,6 @@
 
       .stack {
         margin: 0 em(2);
-        box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
         font-size: em(10);
         background: $secondary;
         color: white;
@@ -91,9 +90,19 @@
     &-stacks {
       ul {
         display: flex;
-      }
-      * {
-        outline: 1px solid red;
+        justify-content: flex-start;
+        margin: 0;
+        padding: 0;
+
+        li {
+          list-style: none;
+          padding: em(3) em(7);
+          background: $accent;
+          color: white;
+          font-size: 15px;
+          margin: 0 5px;
+          border-radius: 3px;
+        }
       }
     }
   }
