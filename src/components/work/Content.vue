@@ -27,7 +27,7 @@
       return {
         projects: [{
             name: 'axel',
-            stack: ['js', 'typescript'],
+            stacks: ['js', 'typescript'],
             description: 'A tiny js lib that allows you to create unique containers per namespace in local-storage.',
             github: 'https://github.com/gwuah/axel',
             liveUrl: '',
@@ -35,7 +35,7 @@
           },
           {
             name: 'axel',
-            stack: ['js', 'typescript'],
+            stacks: ['js', 'typescript'],
             description: 'A tiny js lib that allows you to create unique containers per namespace in local-storage.',
             github: 'https://github.com/gwuah/axel',
             liveUrl: '',
@@ -44,7 +44,7 @@
           },
           {
             name: 'axel',
-            stack: ['js', 'typescript'],
+            stacks: ['js', 'typescript'],
             description: 'A tiny js lib that allows you to create unique containers per namespace in local-storage.',
             github: 'https://github.com/gwuah/axel',
             liveUrl: '',
@@ -52,14 +52,14 @@
 
           }, {
             name: 'axel',
-            stack: ['js', 'typescript'],
+            stacks: ['js', 'typescript'],
             description: 'A tiny js lib that allows you to create unique containers per namespace in local-storage.',
             github: 'https://github.com/gwuah/axel',
             liveUrl: '',
           },
           {
             name: 'axel',
-            stack: ['js', 'typescript'],
+            stacks: ['js', 'typescript'],
             description: 'A tiny js lib that allows you to create unique containers per namespace in local-storage.',
             github: 'https://github.com/gwuah/axel',
             liveUrl: '',

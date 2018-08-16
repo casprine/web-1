@@ -9,7 +9,9 @@
       <p> {{ project.description }} </p>
     </div>
     <div class="project-stacks">
-      <span> {{stack}} </span>
+      <ul>
+        <li v-for="(stack , index ) in project.stacks" :key="index">{{ stack}}</li>
+      </ul>
     </div>
   </div>
 </template>
