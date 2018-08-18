@@ -109,6 +109,7 @@
         margin: 0;
         padding: 0;
         font-family: "Avenir";
+
         li {
           list-style: none;
           padding: em(3) em(7);
@@ -116,9 +117,12 @@
           color: white;
           font-size: 15px;
           margin: 0 5px;
-
           border-radius: 3px;
           box-shadow: 0 5px 20px -7px $accent;
+
+          &:first-child {
+            margin-left: 0;
+          }
         }
       }
     }
