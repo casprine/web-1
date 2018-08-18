@@ -18,29 +18,30 @@
 
 
 <script>
-  import ProjectCard from "./ProjectCard";
-  import axios from 'axios';
-  export default {
-    name: "Content",
-    components: {
-      ProjectCard
-    },
-    data() {
-      return {
-        projects: null
-      };
-    },
-    beforeMount() {
-      let url = `https://casprinne.herokuapp.com/projects`
-  
-      axios.get(url)
-        .then(response => (this.projects = response.data))
-        .then(response => {
-          // console.log(response)
-        })
-        .catch(function(error) {
-          console.log(error);
-        })
-    }
-  };
+import ProjectCard from "./ProjectCard";
+import axios from "axios";
+export default {
+  name: "Content",
+  components: {
+    ProjectCard
+  },
+  data() {
+    return {
+      projects: null
+    };
+  },
+  beforeMount() {
+    let url = `https://casprinne.herokuapp.com/projects`;
+
+    axios
+      .get(url)
+      .then(response => (this.projects = response.data))
+      .then(response => {
+        // console.log(response)
+      })
+      .catch(function(error) {
+        console.log(error);
+      });
+  }
+};
 </script>

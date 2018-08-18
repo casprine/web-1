@@ -19,23 +19,23 @@
 
 
 <script>
-  export default {
-    name: "ProjectCard",
-    props: {
-      project: Object
-    },
-    data() {
-      return {
-        return: {}
-      };
-    },
-    computed:{ 
-      dex()  {
-        let data = this.project.category[0];
-        var kil =  new Array();
-        kil = data.split(',' , 10)
-        return kil
-      }
+export default {
+  name: "ProjectCard",
+  props: {
+    project: Object
+  },
+  data() {
+    return {
+      return: {}
+    };
+  },
+  computed: {
+    dex() {
+      let data = this.project.category[0];
+      var kil = new Array();
+      kil = data.split(",", 10);
+      return kil;
     }
-  };
+  }
+};
 </script>
