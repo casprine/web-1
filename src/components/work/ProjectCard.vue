@@ -1,4 +1,5 @@
 <template>
+<keep-alive>
   <div class="project">
     <div class="project-details">
       <img :src="project.logoUrl" :alt="project.name">
@@ -13,6 +14,7 @@
       </ul>
     </div>
   </div>
+  </keep-alive>
 </template>
 
 
