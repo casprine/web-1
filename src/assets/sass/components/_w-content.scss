@@ -76,15 +76,21 @@
     }
 
     &-link {
-      outline: 1px solid red;
-
       a {
-        outline: 1px solid red;
         margin: 0 em(8);
+        &:first-child {
+          svg {
+            fill: $ash;
+          }
+        }
+
+        &:last-child {
+          svg {
+            fill: $primary;
+          }
+        }
 
         svg {
-          outline: 1px solid green;
-
           width: em(20);
           margin-right: auto;
         }
