@@ -36,9 +36,9 @@ export default {
     axios
       .get(url)
       .then(response => (this.projects = response.data))
-      .then(response => {
-        // console.log(response)
-      })
+      // .then(response => {
+      //   console.log(response)
+      // })
       .catch(function(error) {
         console.log(error);
       });

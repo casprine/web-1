@@ -53,9 +53,10 @@
     align-items: center;
   }
   .project {
+    outline: 1px solid red;
     margin: 0 em(25) em(40) 0;
     width: 300px;
-    cursor: text;
+    // cursor: text;
     transition: 0.2s ease;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 10px 0 -5px #eee,
       0 10px 1px -4px rgba(0, 0, 0, 0.15), 0 20px 0 -10px #eee,
@@ -63,6 +64,7 @@
     min-height: em(140);
     padding: em(5) em(20);
     border: 1px solid rgba(0, 0, 0, 0.15);
+    overflow: hidden;
 
     &:hover {
       box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 10px 0 -5px #eee,
@@ -71,6 +73,22 @@
 
     @media (max-width: em(425)) {
       margin: em(20) 0;
+    }
+
+    &-link {
+      outline: 1px solid red;
+
+      a {
+        outline: 1px solid red;
+        margin: 0 em(8);
+
+        svg {
+          outline: 1px solid green;
+
+          width: em(20);
+          margin-right: auto;
+        }
+      }
     }
 
     &-details,
