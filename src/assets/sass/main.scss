@@ -9,6 +9,9 @@
   margin: 0;
 }
 
+body {
+  background: url("http://api.thumbr.it/whitenoise-361x370.png?background=ffffffff&noise=626262&density=93&opacity=2");
+}
 .sans {
   font-family: "Sans", $defualtFont;
 }
