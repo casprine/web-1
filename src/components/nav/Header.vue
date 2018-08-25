@@ -3,7 +3,7 @@
     <nav>
       <div class="nav-brand">
         <!-- <img src="../../assets/images/logo.svg" alt="my-logo" srcset=""> -->
-        <div class="brand-logo lora"> Casprine  </div>
+        <div class="brand-logo lora"> C<span>a</span>spr<span>i</span>n<span>e </span> </div>
         <div class="mb-only name">Casprine Assempah</div>
         <div class="mb-only title">Frontend 🚀 & UI Developer 🔥</div>
       </div>
