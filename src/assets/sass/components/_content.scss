@@ -1,18 +1,22 @@
 // Content styling
 @import "../partials/em";
+* {
+}
 
 .content {
   display: flex;
   justify-content: center;
   margin: em(20);
+  // flex-flow: column;
   // outline: 2px solid red;
 
   @media (max-width: em(908)) {
     margin: 0;
   }
   &-data {
-    min-height: calc(100vh - 240px);
+    min-height: calc(90vh - 240px);
     display: flex;
+    // outline: 1px solid red;
     flex-flow: wrap;
     justify-content: center;
     align-items: center;
@@ -54,13 +58,17 @@
     }
     p {
       margin: em(10);
+      transition: 0.2s ease;
 
       &:hover {
         color: $ash;
+        span {
+          color: $secondary;
+        }
       }
     }
     span {
-      color: $secondary;
+      color: $accent;
     }
 
     .wave {
@@ -68,7 +76,6 @@
     }
 
     .about {
-      outline: 1px solid red;
       line-height: em(25);
     }
   }
@@ -112,56 +119,6 @@
         }
       }
     }
-
-    .social {
-      .links {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        li {
-          list-style: none;
-          margin: em(15) em(15) 0 em(15);
-
-          &:first-child {
-            margin-left: 0;
-          }
-          a {
-            svg {
-              width: em(25);
-              fill: #142025;
-            }
-          }
-        }
-
-        // website link
-        .mail {
-          &:hover {
-            fill: $primary;
-          }
-        }
-
-        // dribbble link
-        .dribbble {
-          &:hover {
-            fill: #ea4c89;
-          }
-        }
-
-        // github link
-        .github {
-          &:hover {
-            fill: #333;
-          }
-        }
-
-        // twitter
-        .twitter {
-          &:hover {
-            fill: #1da1f2;
-          }
-        }
-      }
-    }
   }
 }
 
@@ -184,5 +141,55 @@
 
   @media (max-width: em(908)) {
     display: none;
+  }
+}
+
+.social {
+  .links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    li {
+      list-style: none;
+      margin: em(15) em(15) 0 em(15);
+
+      &:first-child {
+        margin-left: 0;
+      }
+      a {
+        svg {
+          width: em(25);
+          fill: #142025;
+        }
+      }
+    }
+
+    // website link
+    .mail {
+      &:hover {
+        fill: $primary;
+      }
+    }
+
+    // dribbble link
+    .dribbble {
+      &:hover {
+        fill: #ea4c89;
+      }
+    }
+
+    // github link
+    .github {
+      &:hover {
+        fill: #333;
+      }
+    }
+
+    // twitter
+    .twitter {
+      &:hover {
+        fill: #1da1f2;
+      }
+    }
   }
 }
