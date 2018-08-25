@@ -4,8 +4,9 @@
             <div class="content-data">
                 <div class="left">
                     <p>Hi <span class="wave"> 👋</span>, I'm Casprine.</p>
-                    <p class="about"> A <span class="tag">frontend</span> developer with <span> UI/UX skills </span> currently at Pirple Labs, previously at <a href="https://omgdigitalinc.com/" class="link"> @OmgDigital.</a> I design and develop experiences that make people's
-                        lives simple. I also write about my experiences and tutorials on my <a href="https://blog.casprine.xyz" class="link">Blog</a>
+                    <p class="about"> A <span class="tag">frontend</span> developer with <span> UI/UX skills </span> currently at Pirple Labs, previously at <a href="https://omgdigitalinc.com/" class="link"> @OmgDigital.</a> 
+                   <br>  I design and develop experiences that make people's lives simple.
+                   <br>   I also write about my experiences and tutorials on my <a href="https://blog.casprine.xyz" class="link">Blog</a>
                     </p>
                 </div>
                 <div class="right">
