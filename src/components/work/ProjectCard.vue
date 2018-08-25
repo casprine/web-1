@@ -3,7 +3,7 @@
     <div class="project">
       <div class="project-details">
         <img :src="project.logoUrl" :alt="project.name">
-        <p class="name flex"> {{project.name}}</p>
+        <p class="name flex lora"> {{project.name}}</p>
       </div>
       <div class="project-description">
         <p> {{ project.about }} </p>
@@ -38,7 +38,7 @@
     },
     data() {
       return {
-        return: {}
+      return: {}
       };
     },
     computed: {
