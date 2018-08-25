@@ -3,14 +3,14 @@
         <div class="content">
             <div class="content-data">
                 <div class="left">
-                    <p>Hi <span class="wave"> 👋</span>, I am Casprine.</p>
-                    <p> A <span class="tag">frontend</span> developer and <span> UI designer </span>  <a href="https://omgdigitalinc.com/" class="link"> @OmgDigital.</a> </p>
-                    <p> I design and develop experiences that make people's lives simple. </p>
-                    <p> I also write about my experiences and tutorials on my <a href="https://blog.casprine.xyz" class="link">Blog</a> </p>
+                    <p>Hi <span class="wave"> 👋</span>, I'm Casprine.</p>
+                    <p class="about"> A <span class="tag">frontend</span> developer with <span> UI/UX skills </span> currently at Pirple Labs, previously at <a href="https://omgdigitalinc.com/" class="link"> @OmgDigital.</a> I design and develop experiences that make people's
+                        lives simple. I also write about my experiences and tutorials on my <a href="https://blog.casprine.xyz" class="link">Blog</a>
+                    </p>
                 </div>
                 <div class="right">
                     <div class="stacks">
-                        <h2>Stack 👨‍💻 </h2>
+                        <h2 class="lora">Stack 👨‍💻 </h2>
                         <div class="stack">
                             <span class="stack-key"> Skills:</span> <span class="stack-data"> HTML, CSS(Sass),  Javascript, Git , PWA </span> <br>
                             <span class="stack-key"> Frameworks:</span> <span class="stack-data"> React(Gatsby), Vue </span> <br>
@@ -41,21 +41,12 @@
                 </div>
             </div>
         </div>
-          <div class="bg">
-            <svg width="298px" height="370px" viewBox="0 0 298 370" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-      <defs>
-        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="a"><stop stop-color="#051736" offset="0%"></stop><stop stop-color="#DFEBF7" offset="100%"></stop>
-        </linearGradient>
-      </defs>
-      <path d="M145.918 370C229.911 370 298 287.173 298 185S268.967 0 145.918 0C22.869 0 52.589 128 18.884 185c-62.461 105.633 43.041 185 127.034 185z" fill="url(#a)" fill-rule="evenodd"></path>
-    </svg>
-        </div>
     </div>
 </template>
 
 
 <script>
-export default {
-  name: "Content"
-};
+    export default {
+        name: "Content"
+    };
 </script>

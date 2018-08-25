@@ -66,6 +66,11 @@
     .wave {
       font-size: em(25);
     }
+
+    .about {
+      outline: 1px solid red;
+      line-height: em(25);
+    }
   }
 
   .right {
@@ -82,7 +87,6 @@
         font-size: em(30);
         font-weight: 100;
         margin-bottom: em(10);
-        font-family: "avenir";
       }
 
       .stack {

@@ -23,3 +23,15 @@ $defualtFont: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans
   font-display: auto;
   -webkit-font-smoothing: antialiased;
 }
+
+@font-face {
+  font-family: "Lora";
+  src: url("../fonts/Lora.ttf");
+  font-weight: normal;
+  font-display: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.lora {
+  font-family: "Lora", $defualtFont;
+}
