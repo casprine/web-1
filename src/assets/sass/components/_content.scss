@@ -99,7 +99,8 @@
         &-key {
           padding-right: em(5);
           font-family: "avenir";
-          color: $secondary;
+          color: $accent;
+          font-weight: bold;
           width: 100px;
         }
         &-data {
