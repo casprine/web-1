@@ -10,8 +10,6 @@
       <div class="projects">
         <project-card v-for="(project , index) in projects" :key="index" :project="project" />
       </div>
-      <div class="oss">
-      </div>
     </div>
   </div>
 </template>
