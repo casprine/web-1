@@ -1,9 +1,9 @@
 <template>
   <div class="work-content">
     <div class="hero">
-      <p class="sans">I work <a href="https://omgdigitalinc.com/" class="link">@OmgDigital</a> as a frontend developer </p>
+      <p class="sans">I work <a href="#" class="link">@Pirple Labs</a> as a frontend developer </p>
       <p class="sans">currently working with
-        <span class="stack avenir">React</span>,<span class="stack">Firebase</span> and <span class="stack">Sass</span> </p>
+        <span class="stack">React</span>, <span class="stack"> Vue </span>,<span class="stack">Firebase</span> and <span class="stack">Sass</span> </p>
     </div>
     <div class="previous">
       <h1 class="lora">Previous works <span> 🏣</span> </h1>
