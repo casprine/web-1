@@ -6,14 +6,12 @@
 
 .content {
   display: flex;
-  // margin: em(20);
   justify-content: center;
   align-items: center;
   height: 65vh;
-  // outline: 1px solid red;
 
   @media (max-width: em(908)) {
-    margin: 0;
+    margin-top: em(100);
   }
   &-data {
     min-height: calc(90vh - 240px);

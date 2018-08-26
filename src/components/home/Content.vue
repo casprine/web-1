@@ -48,7 +48,7 @@
 
 
 <script>
-    export default {
-        name: "Content"
-    };
+export default {
+  name: "Content"
+};
 </script>

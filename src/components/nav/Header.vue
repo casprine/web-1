@@ -2,11 +2,11 @@
   <div class="header">
     <nav>
       <div class="nav-brand">
-        <img src="../../assets/images/logo.svg" alt="my-logo" srcset="../../assets/images/logo.svg">
-        <div class="mb-only name">Casprine Assempah</div>
-        <div class="mb-only title">Frontend 🚀 & UI Developer 🔥</div>
+        <img src="../../assets/images/logo.svg" alt="my-logo" srcset="">
+        <div class="mb-only name sans">Casprine Assempah</div>
+        <div class="mb-only title sans">Frontend 🚀 & UI Developer 🔥</div>
       </div>
-      <div class="nav-items lora">
+      <div class="nav-items">
         <ul>
           <router-link to="/" class="nav-item">
             <li>
@@ -19,10 +19,10 @@
             </li>
           </router-link>
           <!-- <router-link to="design" class="nav-item">
-              <li>
-                Design
-              </li>
-            </router-link> -->
+            <li>
+              Design
+            </li>
+          </router-link> -->
           <a href="https://blog.casprine.xyz" class="nav-item">
             <li>
               Journal
@@ -35,9 +35,9 @@
 </template>
 
 <script>
-  // @ is an alias to /src
-  export default {
-    name: "Header",
-    components: {}
-  };
+// @ is an alias to /src
+export default {
+  name: "Header",
+  components: {}
+};
 </script>
