@@ -43,8 +43,19 @@
                             </li>
                         </div>
                     </div>
+
+<div class="footer sans flex">
+Copyright {{ new Date().getFullYear()  }}
+</div>
     </div>
 </template>
+
+<style lang="scss" scoped>
+.footer {
+  //   outline: 1px solid red;
+  color: #456173;
+}
+</style>
 
 
 <script>

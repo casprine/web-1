@@ -1,13 +1,17 @@
 // Content styling
 @import "../partials/em";
 * {
-  outline: 1px solid red;
+  // outline: 1px solid $accent;
 }
 
 .content {
   display: flex;
-  margin: em(20);
+  // margin: em(20);
   justify-content: center;
+  align-items: center;
+  height: 65vh;
+  // outline: 1px solid red;
+
   @media (max-width: em(908)) {
     margin: 0;
   }
@@ -142,6 +146,8 @@
 }
 
 .social {
+  // outline: 1px solid red;
+  margin-bottom: 50px;
   .links {
     display: flex;
     justify-content: flex-start;
