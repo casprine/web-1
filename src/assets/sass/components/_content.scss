@@ -1,15 +1,12 @@
 // Content styling
 @import "../partials/em";
 * {
+  outline: 1px solid red;
 }
 
 .content {
   display: flex;
   justify-content: center;
-  margin: em(20);
-  // flex-flow: column;
-  // outline: 2px solid red;
-
   @media (max-width: em(908)) {
     margin: 0;
   }
@@ -158,7 +155,7 @@
       }
       a {
         svg {
-          width: em(25);
+          width: em(20);
           fill: #142025;
         }
       }
@@ -166,30 +163,22 @@
 
     // website link
     .mail {
-      &:hover {
-        fill: $primary;
-      }
+      fill: $primary;
     }
 
     // dribbble link
     .dribbble {
-      &:hover {
-        fill: #ea4c89;
-      }
+      fill: #ea4c89;
     }
 
     // github link
     .github {
-      &:hover {
-        fill: #333;
-      }
+      fill: #333;
     }
 
     // twitter
     .twitter {
-      &:hover {
-        fill: #1da1f2;
-      }
+      fill: #1da1f2;
     }
   }
 }
