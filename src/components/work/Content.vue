@@ -60,7 +60,7 @@
             "logoUrl": "https://emojipedia-us.s3.amazonaws.com/thumbs/120/apple/129/open-book_1f4d6.png",
   
             "name": "Jester",
-            "about": "Collection for all your favourite developer books in ",
+            "about": "Collection for all your favourite developer books in one place",
   
           },
           {
