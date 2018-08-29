@@ -9,7 +9,7 @@
   justify-content: center;
   align-items: center;
   height: 65vh;
-
+  font-size: 13px;
   @media (max-width: em(908)) {
     margin-top: em(100);
   }
@@ -104,7 +104,7 @@
 
         &-key {
           padding-right: em(5);
-          font-family: "avenir";
+          font-family: "sans";
           color: $accent;
           font-weight: bold;
           width: 100px;

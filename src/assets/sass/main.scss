@@ -4,7 +4,10 @@
 @import "views/home";
 @import "views/work";
 
-@import url("https://fonts.googleapis.com/css?family=Poppins");
+* {
+  color: $primary;
+  margin: 0;
+}
 
 body {
   background: url("http://api.thumbr.it/whitenoise-361x370.png?background=ffffffff&noise=626262&density=93&opacity=3");
@@ -59,11 +62,4 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-* {
-  color: $primary;
-  margin: 0;
-  font-family: "Poppins", sans-serif;
-  font-size: 13px;
 }
