@@ -135,14 +135,12 @@
 
         li {
           list-style: none;
-          padding: em(3) em(7);
-          background: $accent;
-          color: white;
-          font-size: 15px;
+          padding: em(5) em(7);
+          border: 1px solid $accent;
+          color: $accent;
+          font-size: 12px;
           margin: 0 5px;
           border-radius: 3px;
-          box-shadow: 0 5px 20px -7px $accent;
-
           &:first-child {
             margin-left: 0;
           }

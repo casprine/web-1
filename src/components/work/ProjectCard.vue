@@ -39,7 +39,7 @@ export default {
   },
   computed: {
     dex() {
-      let data = this.project.category[0];
+      var data = this.project.category[0];
       var kil = new Array();
       kil = data.split(",", 10);
       return kil;
