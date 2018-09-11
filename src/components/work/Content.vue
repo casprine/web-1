@@ -6,7 +6,7 @@
         <span class="stack">React</span>, <span class="stack"> Vue </span>,<span class="stack">Firebase</span> and <span class="stack">Sass</span> </p>
     </div>
     <div class="previous">
-      <h1 class="lora">Previous works <span> 🏣</span> </h1>
+      <h1 class="lora">Stuff I have worked on <span>  </span> </h1>
       <div class="projects">
         <project-card v-for="(project , index) in projects" :key="index" :project="project" />
       </div>

@@ -6,18 +6,18 @@
     font-weight: 100;
 
     &:last-child {
-      color: $ash;
       font-size: em(10);
-
+      margin-top: 4px;
       .stack {
         margin: 0 em(2);
-        font-size: em(10);
-        background: $accent;
         color: white;
         border-radius: em(3);
         border: 0;
-        color: white;
+        color: $accent;
         padding: em(3) em(7);
+        font-size: 12px;
+        border: 2px solid $primary;
+        font-family: "sans";
       }
     }
     .link {
@@ -113,7 +113,6 @@
       display: flex;
       justify-content: flex-start;
       align-content: center;
-      font-family: "Avenir";
       .name {
         text-transform: capitalize;
         font-size: em(20);
@@ -130,6 +129,7 @@
     &-description {
       color: $primary;
       font-family: "Sans";
+      outline: 1px solid red;
     }
 
     &-stacks {
@@ -139,7 +139,6 @@
         margin: 0;
         padding: 0;
         font-family: "sans";
-
         li {
           list-style: none;
           padding: em(5) em(7);
