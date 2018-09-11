@@ -64,6 +64,7 @@
     padding: em(5) em(20);
     border: 1px solid rgba(0, 0, 0, 0.15);
     overflow: hidden;
+    position: relative;
 
     &:hover {
       box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 10px 0 -5px #eee,
@@ -76,22 +77,28 @@
 
     &-link {
       a {
-        margin: 0 em(8);
+        position: absolute;
+        width: em(30);
+        height: em(30);
+        display: flex;
+        justify-content: center;
+        background: $primary;
         &:first-child {
-          svg {
-            fill: $ash;
-          }
+          top: 0;
+          right: 0;
+          border-bottom-left-radius: 50%;
+          border-bottom-left-radius: 50%;
         }
 
         &:last-child {
-          svg {
-            fill: $primary;
-          }
+          bottom: 0;
+          right: 0;
+          border-top-left-radius: 50%;
         }
 
         svg {
-          width: em(20);
-          margin-right: auto;
+          width: em(15);
+          fill: white;
         }
       }
     }
