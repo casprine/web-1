@@ -3,10 +3,10 @@
     <div class="hero">
       <p class="sans">I work <a href="#" class="link">@Pirple Labs</a> as a frontend developer </p>
       <p class="sans">currently working with
-        <span class="stack">React</span>, <span class="stack"> Vue </span>,<span class="stack">Firebase</span> and <span class="stack">Sass</span> </p>
+        <span class="stack">React</span><span class="stack"> Vue </span><span class="stack">Firebase</span> & <span class="stack">Sass</span> </p>
     </div>
     <div class="previous">
-      <h1 class="lora">Stuff I have worked on <span>  </span> </h1>
+      <h1 class="lora">Stuff I have worked on <span> 😁 </span> </h1>
       <div class="projects">
         <project-card v-for="(project , index) in projects" :key="index" :project="project" />
       </div>
