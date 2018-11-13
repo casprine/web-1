@@ -29,6 +29,11 @@ button {
     width: 250px;
     justify-content: space-between;
     align-content: center;
+
+    li {
+      outline: 1px solid red;
+      font-style: normal;
+    }
   }
 }
 

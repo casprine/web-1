@@ -11,7 +11,7 @@ const HomeHeader = () => {
         <div className="ca-homeHeader-footer padding center">
           <div className="more"> More</div>
 
-          <Button content="Hire Me" />
+          <Button content="Hire Me 👨🏿‍💻" />
         </div>
       </div>
     </Fragment>
