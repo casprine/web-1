@@ -43,14 +43,17 @@ body {
   color: $primary;
 }
 
+.ca-heading-big {
+  font-family: "Bold";
+}
+
+.ca-sub-heading {
+  font-family: "Book";
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-// * {
-//   outline: 1px solid red;
-// }
 
 .padding {
   padding: 40px 90px;
