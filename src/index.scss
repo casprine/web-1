@@ -3,6 +3,7 @@
   src: url("./assets/geo.ttf");
   font-weight: normal;
   font-style: normal;
+  font-display: auto;
 }
 
 body {
@@ -20,11 +21,20 @@ code {
     monospace;
 }
 
-* {
-  // outline: 1px solid red;
-}
 .padding {
   padding: 40px 90px;
+}
+
+.padding-side {
+  padding: 0 90px;
+}
+
+.padding-top {
+  padding-top: 40px;
+}
+
+.padding-bottom {
+  padding-bottom: 40px;
 }
 
 .center {
@@ -36,5 +46,18 @@ code {
 ul {
   li {
     list-style: none;
+  }
+}
+
+.link {
+  padding-bottom: 8px;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+  cursor: pointer;
+
+  &:hover {
+    padding-bottom: 4px;
+    border-bottom: 2px solid #000;
   }
 }
