@@ -1,0 +1,60 @@
+// Button Styling
+button {
+  border: none;
+  width: 100px;
+}
+
+// Header styling
+.ca-header {
+  height: 20px;
+
+  .ca-routes {
+    li {
+      margin: 0 50px;
+    }
+  }
+}
+
+// Logo styling
+.ca-logo {
+  margin-right: auto;
+  width: 40px;
+  height: 40px;
+  border: 2px solid black;
+  cursor: pointer;
+
+  div {
+    font-size: 20px;
+  }
+}
+
+// Layout Styling
+.ca-layout {
+  height: 100vh;
+  background-image: -webkit-radial-gradient(
+    circle,
+    #d7d7d7,
+    #d7d7d7 1px,
+    #fff 1px,
+    #fff
+  );
+  background-image: -moz-radial-gradient(
+    circle,
+    #d7d7d7,
+    #d7d7d7 1px,
+    #fff 1px,
+    #fff
+  );
+  background-image: radial-gradient(
+    circle,
+    #d7d7d7,
+    #d7d7d7 1px,
+    #fff 1px,
+    #fff
+  );
+  background-color: red;
+  background-size: 28px 28px;
+  .ca-layout-children {
+    height: 100vh;
+  }
+}
