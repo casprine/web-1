@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Header, Layout } from "../common/index";
+import { Header, Layout, Button } from "../../common/index";
 import "./style.scss";
 
 const HomeHeader = () => {
@@ -7,6 +7,12 @@ const HomeHeader = () => {
     <Fragment>
       <div className="ca-homeHeader">
         <Header />
+        <div className="ca-homeHeader-content padding">Hello</div>
+        <div className="ca-homeHeader-footer padding center">
+          <div className="more"> More</div>
+
+          <Button content="Hire Me" />
+        </div>
       </div>
     </Fragment>
   );

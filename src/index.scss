@@ -1,3 +1,5 @@
+@import "./assets/sass/variables";
+
 @font-face {
   font-family: "geo";
   src: url("./assets/geo.ttf");
@@ -14,12 +16,17 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: $primary;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+// * {
+//   outline: 1px solid red;
+// }
 
 .padding {
   padding: 40px 90px;
@@ -58,6 +65,6 @@ ul {
 
   &:hover {
     padding-bottom: 4px;
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid $primary;
   }
 }

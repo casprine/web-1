@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { HomeHeaderWithLayout } from "../sections/index";
+import { HomeHeaderWithLayout } from "../section/home/index";
 
 const Home = () => {
   return (

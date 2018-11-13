@@ -1,17 +1,34 @@
 // Button Styling
+
+@import "../../assets/sass/variables";
+
 button {
-  border: none;
-  width: 100px;
+  border: 2px solid $secondary;
+  width: 193.9px;
+  position: relative;
+  padding: 12px 25px;
+  font-size: 15.8px;
+  cursor: pointer;
+  background: white;
+  color: black;
+  display: block;
+  transition: ease-out 0.7s;
+  box-shadow: inset 0 0 0 0 $secondary;
+
+  &:hover {
+    box-shadow: inset 400px 0 0 0 $secondary;
+    color: white;
+  }
 }
 
 // Header styling
 .ca-header {
   height: 20px;
-
   .ca-routes {
-    li {
-      margin: 0 50px;
-    }
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+    align-content: center;
   }
 }
 
@@ -22,6 +39,7 @@ button {
   height: 40px;
   border: 2px solid black;
   cursor: pointer;
+  background: white;
 
   div {
     font-size: 20px;
