@@ -29,11 +29,6 @@ button {
     width: 250px;
     justify-content: space-between;
     align-content: center;
-
-    li {
-      outline: 1px solid red;
-      font-style: normal;
-    }
   }
 }
 
@@ -45,6 +40,12 @@ button {
   border: 2px solid black;
   cursor: pointer;
   background: white;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    border: 2px solid $secondary;
+    color: $secondary;
+  }
 
   div {
     font-size: 20px;

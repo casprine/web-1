@@ -2,7 +2,31 @@
 
 @font-face {
   font-family: "geo";
-  src: url("./assets/geo.ttf");
+  src: url("./assets/fonts/geo.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: "Book";
+  src: url("./assets/fonts/CircularBook.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: "Bold";
+  src: url("./assets/fonts/CircularBold.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: "Medium";
+  src: url("./assets/fonts/CircularMedium.ttf");
   font-weight: normal;
   font-style: normal;
   font-display: auto;
