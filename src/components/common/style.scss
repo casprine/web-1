@@ -3,7 +3,7 @@
 @import "../../assets/sass/variables";
 
 button {
-  border: 2px solid $secondary;
+  border: 2px solid $primary;
   width: 193.9px;
   position: relative;
   padding: 12px 25px;
@@ -13,10 +13,10 @@ button {
   color: black;
   display: block;
   transition: ease-out 0.7s;
-  box-shadow: inset 0 0 0 0 $secondary;
+  box-shadow: inset 0 0 0 0 $primary;
 
   &:hover {
-    box-shadow: inset 400px 0 0 0 $secondary;
+    box-shadow: inset 400px 0 0 0 $primary;
     color: white;
   }
 }
