@@ -7,8 +7,9 @@ const HomeHeader = () => {
   return (
     <Fragment>
       <div className="ca-homeHeader">
-        <Header />
-        <div className="ca-homeHeader-content padding">
+        <Header className="header" />
+
+        <div className="ca-homeHeader-content padding-side ">
           <div className="ca-emoji">
             <img src={wavingHand} alt="waving hand" />
           </div>
@@ -33,7 +34,8 @@ const HomeHeader = () => {
             </div>
           </div>
         </div>
-        <div className="ca-homeHeader-footer padding center">
+
+        <div className="ca-homeHeader-footer  padding-side center">
           <div className="more"> More</div>
           <Button content="Hire Me 👨🏿‍💻" />
         </div>

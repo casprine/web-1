@@ -22,18 +22,20 @@ const Header = () => (
       <ul className="ca-routes">
         <li className="link">Work</li>
         <li className="link">Design</li>
-        <li className="link">Blog</li>
+        <li className="link">Writings</li>
       </ul>
     </nav>
   </Fragment>
 );
 
-const Layout = ({ children }) => (
-  <Fragment>
-    <div className="ca-layout">
-      <div className="ca-layout-children">{children}</div>
-    </div>
-  </Fragment>
-);
+const Layout = ({ children }) => {
+  return (
+    <Fragment>
+      <div className="ca-layout">
+        <div className="ca-layout-children">{children}</div>
+      </div>
+    </Fragment>
+  );
+};
 
 export { Button, Logo, Header, Layout };

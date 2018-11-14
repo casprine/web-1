@@ -24,6 +24,7 @@ button {
 // Header styling
 .ca-header {
   height: 20px;
+  // outline: 1px solid green;
   .ca-routes {
     display: flex;
     width: 250px;
@@ -55,6 +56,7 @@ button {
 // Layout Styling
 .ca-layout {
   height: 100vh;
+  outline: 1px solid red;
   background-image: -webkit-radial-gradient(
     circle,
     #d7d7d7,
