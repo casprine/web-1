@@ -1,6 +1,5 @@
 import React, { Fragment } from "react";
 import { Header, Layout, Button } from "../../common/index";
-import wavingHand from "../../../assets/waving.gif";
 import "./style.scss";
 
 const HomeHeader = () => {
@@ -11,7 +10,9 @@ const HomeHeader = () => {
 
         <div className="ca-homeHeader-content padding-side ">
           <div className="ca-emoji">
-            <img src={wavingHand} alt="waving hand" />
+            <span role="img" aria-label="wavingHand">
+              👋
+            </span>
           </div>
 
           <div className="ca-heading">
