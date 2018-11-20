@@ -5,12 +5,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    outline: 1px solid red;
 
     .skill {
       width: 400px;
       height: auto;
       background: white;
       padding: 20px 0;
+      outline: 1px solid blue;
+
       &:nth-child(2) {
         margin: 0 10px;
       }
@@ -48,27 +51,22 @@
 
       &-skillsets {
         display: flex;
-        justify-content: center;
         align-items: center;
-        outline: 1px solid red;
         flex-wrap: wrap;
-        width: 300px;
+        width: 350px;
 
         .skillset {
-          outline: 1px solid blue;
           margin: 5px;
-
           img {
             border-radius: 2px;
             width: 40px;
             height: 40px;
             display: block;
-            border: 1px solid red;
             transition: 0.3s ease-in-out;
             pointer-events: all;
             filter: grayscale(100%);
             cursor: pointer;
-
+            box-shadow: inset 0px 0px 10px 3px rgba(245, 245, 245, 1);
             &:hover {
               filter: none;
             }
