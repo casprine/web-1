@@ -15,7 +15,11 @@
       span {
         background: white;
         padding-left: 8px;
-        font-size: 50px;
+        font-size: 50pt;
+        text-align: center;
+        animation: waver 0.65s alternate infinite;
+        transform-origin: 50% 90%;
+        animation-timing-function: ease-in-out;
       }
     }
 
@@ -48,5 +52,14 @@
     .more {
       margin-right: auto;
     }
+  }
+}
+
+@keyframes waver {
+  0% {
+    transform: rotate(-25deg);
+  }
+  100% {
+    transform: rotate(30deg);
   }
 }

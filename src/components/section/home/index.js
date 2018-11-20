@@ -37,7 +37,7 @@ const HomeHeader = () => {
         </div>
 
         <div className="ca-homeHeader-footer  padding-side center">
-          <div className="more"> More</div>
+          <div className="more"> Know More </div>
           <Button content="Hire Me 👨🏿‍💻" />
         </div>
       </div>
