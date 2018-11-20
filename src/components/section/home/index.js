@@ -37,7 +37,10 @@ const HomeHeader = () => {
         </div>
 
         <div className="ca-homeHeader-footer  padding-side center">
-          <div className="more"> Know More </div>
+          <span role="img" className="more">
+            {" "}
+            Scroll Down👇{" "}
+          </span>
           <Button content="Hire Me 👨🏿‍💻" />
         </div>
       </div>
@@ -55,4 +58,4 @@ const HomeHeaderWithLayout = () => {
   );
 };
 
-export { HomeHeaderWithLayout };
+export default HomeHeaderWithLayout;

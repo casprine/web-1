@@ -38,4 +38,20 @@ const Layout = ({ children }) => {
   );
 };
 
-export { Button, Logo, Header, Layout };
+const SectionHeader = props => {
+  return (
+    <Fragment>
+      <div className="section">
+        <div className="section-title"> What I do </div>
+        <div className="section-about"> desgin. frontend. mobile. </div>
+        <div className="section-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, ab
+          rerum! Sit ipsa odit, eveniet omnis autem quas nihil sunt suscipit
+          iure dignissimos eligendi harum, animi vitae nostrum officia alias.
+        </div>
+      </div>
+    </Fragment>
+  );
+};
+
+export { Button, Logo, Header, Layout, SectionHeader };

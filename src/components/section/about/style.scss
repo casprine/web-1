@@ -1,0 +1,78 @@
+@import "../../../assets/sass/variables";
+
+.about {
+  //   outline: 1px solid red;
+
+  &-skills {
+    // outline: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .skill {
+      width: 400px;
+      height: auto;
+      background: white;
+      padding: 20px 0;
+      &:nth-child(2) {
+        margin: 0 10px;
+      }
+
+      &-icon {
+        margin-bottom: 20px;
+        .img {
+          display: block;
+          width: 50px;
+          height: 50px;
+          margin-left: -10px;
+        }
+      }
+
+      &-name {
+        text-transform: capitalize;
+        font-size: 18px;
+        font-weight: 400;
+        font-family: "Book";
+        letter-spacing: -0.02em;
+        margin-bottom: 2rem;
+        line-height: 1.4;
+        margin: 10px 0;
+      }
+
+      &-description {
+        letter-spacing: -0.02em;
+        line-height: 1.4;
+        color: inherit;
+        font-weight: 300;
+        margin-bottom: 2rem;
+        font-size: 17px;
+        color: $grey;
+      }
+
+      &-skillsets {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        outline: 1px solid red;
+        flex-wrap: wrap;
+
+        .skillset {
+          outline: 1px solid blue;
+          img {
+            width: 40px;
+            height: 40px;
+            display: block;
+            filter: grayscale(100%);
+            transition: 0.3s ease-in-out;
+            cursor: pointer;
+            pointer-events: all;
+
+            &:hover {
+              filter: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
