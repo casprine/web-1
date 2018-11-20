@@ -1,10 +1,7 @@
 @import "../../../assets/sass/variables";
 
 .about {
-  //   outline: 1px solid red;
-
   &-skills {
-    // outline: 1px solid red;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,7 +33,7 @@
         letter-spacing: -0.02em;
         margin-bottom: 2rem;
         line-height: 1.4;
-        margin: 10px 0;
+        margin-bottom: 20px;
       }
 
       &-description {
@@ -44,7 +41,7 @@
         line-height: 1.4;
         color: inherit;
         font-weight: 300;
-        margin-bottom: 2rem;
+        margin-bottom: 20px;
         font-size: 17px;
         color: $grey;
       }
@@ -55,17 +52,22 @@
         align-items: center;
         outline: 1px solid red;
         flex-wrap: wrap;
+        width: 300px;
 
         .skillset {
           outline: 1px solid blue;
+          margin: 5px;
+
           img {
+            border-radius: 2px;
             width: 40px;
             height: 40px;
             display: block;
-            filter: grayscale(100%);
+            border: 1px solid red;
             transition: 0.3s ease-in-out;
-            cursor: pointer;
             pointer-events: all;
+            filter: grayscale(100%);
+            cursor: pointer;
 
             &:hover {
               filter: none;
@@ -75,4 +77,8 @@
       }
     }
   }
+}
+
+* {
+  // outline: 1px solid red;
 }
