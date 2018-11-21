@@ -10,9 +10,11 @@ const Button = ({ content }) => (
 
 const Logo = () => (
   <Fragment>
-    <div className="ca-logo center">
-      <div> C </div>
-    </div>
+    <Link to="/">
+      <div className="ca-logo center">
+        <div> C </div>
+      </div>
+    </Link>
   </Fragment>
 );
 
@@ -36,15 +38,11 @@ const Header = () => (
 );
 
 const Layout = ({ children, height }) => {
-  console.log(children, height);
-
   const LayoutStyle = {
     wrapper: {
       height: height + "vh"
     }
   };
-
-  console.log(LayoutStyle);
 
   return (
     <Fragment>
@@ -55,7 +53,7 @@ const Layout = ({ children, height }) => {
   );
 };
 
-const SectionHeader = props => {
+const SectionHeader = ({ title, about, description }) => {
   return (
     <Fragment>
       <div className="section">

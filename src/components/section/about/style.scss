@@ -67,7 +67,7 @@
             display: block;
             transition: 0.3s ease-in-out;
             pointer-events: all;
-            filter: grayscale(100%);
+            // filter: grayscale(100%);
             cursor: pointer;
             box-shadow: inset 0px 0px 10px 3px rgba(245, 245, 245, 1);
             &:hover {

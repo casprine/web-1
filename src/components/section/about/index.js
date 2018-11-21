@@ -1,6 +1,6 @@
 import React, { Fragment, Component } from "react";
 import { SectionHeader, Layout } from "../../common/index";
-import SkillSetData from "../../../data/index";
+import data from "../../../data/index";
 
 import "./style.scss";
 
@@ -16,8 +16,8 @@ const SkillSet = ({ name, description, image, skills }) => {
       <div className="skill-skillsets">
         {skills.map(skill => {
           return (
-            <span className="skillset">
-              <img src={skill.imgLink} alt="" key={skill.id} />
+            <span className="skillset" key={skill.id}>
+              <img src={skill.imgLink} alt="" />
             </span>
           );
         })}
@@ -27,17 +27,16 @@ const SkillSet = ({ name, description, image, skills }) => {
 };
 
 class About extends Component {
-  componentDidMount() {}
-
   render() {
+    const { SkillSetData } = data;
     return (
       <Fragment>
         <div className="about">
           <SectionHeader />
           <div className="about-skills">
-            {SkillSetData.map(data => (
-              <SkillSet {...data} key={data.id} />
-            ))}
+            {SkillSetData.map(data => {
+              return <SkillSet {...data} key={data.id} />;
+            })}
           </div>
         </div>
       </Fragment>
