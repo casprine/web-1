@@ -737,6 +737,71 @@
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
 
+"@curi/helpers@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@curi/helpers/-/helpers-1.0.0.tgz#c791ee9c07796354f9144c643cdaeb674dc56a23"
+
+"@curi/react-dom@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@curi/react-dom/-/react-dom-1.2.0.tgz#f923680dec03aa8a805e0d5e10f7717e7f0e0c81"
+  dependencies:
+    "@curi/react-universal" "^1.1.0"
+    "@curi/router" "^1.1.0"
+    "@types/react" "^16.3.11"
+    "@types/shallowequal" "^0.2.3"
+    shallowequal "^1.1.0"
+
+"@curi/react-universal@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@curi/react-universal/-/react-universal-1.1.0.tgz#906fab4815e0a8d4bef4663bf6894507af7ed741"
+  dependencies:
+    "@curi/route-active" "^1.1.0"
+    "@curi/router" "^1.1.0"
+    "@hickory/root" "^1.0.0"
+    "@types/react" "^16.3.11"
+
+"@curi/route-active@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@curi/route-active/-/route-active-1.1.0.tgz#8aa1406d86b6302ed1fd7aa94edab4575ae2dcd0"
+  dependencies:
+    "@curi/router" "^1.1.0"
+    "@hickory/in-memory" "^1.0.2"
+
+"@curi/router@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@curi/router/-/router-1.1.0.tgz#d5610bf758a50921e037d2dd6f2cee9ac4edaaa5"
+  dependencies:
+    "@curi/helpers" "^1.0.0"
+    "@hickory/root" "^1.0.0"
+    path-to-regexp "^2.1.0"
+
+"@hickory/browser@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@hickory/browser/-/browser-1.0.2.tgz#79fd780cd92fe8e563d3131043580205b233fdfc"
+  dependencies:
+    "@hickory/dom-utils" "^1.0.2"
+    "@hickory/root" "^1.0.2"
+
+"@hickory/dom-utils@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@hickory/dom-utils/-/dom-utils-1.0.2.tgz#6b283ebf733018817073f42a227692a8ac3b88e4"
+
+"@hickory/in-memory@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@hickory/in-memory/-/in-memory-1.0.2.tgz#4c70db528825da57387e6b18506006115401ecdb"
+  dependencies:
+    "@hickory/root" "^1.0.2"
+
+"@hickory/location-utils@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@hickory/location-utils/-/location-utils-1.0.2.tgz#b1db360d35b208eda029b45ebfa54f1b4643ad64"
+
+"@hickory/root@^1.0.0", "@hickory/root@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@hickory/root/-/root-1.0.2.tgz#e445e224226823c8025eb36c14557408281632e8"
+  dependencies:
+    "@hickory/location-utils" "^1.0.2"
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
@@ -770,6 +835,21 @@
     "@babel/preset-react" "^7.0.0"
     "@svgr/core" "^2.4.1"
     loader-utils "^1.1.0"
+
+"@types/prop-types@*":
+  version "15.5.6"
+  resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.5.6.tgz#9c03d3fed70a8d517c191b7734da2879b50ca26c"
+
+"@types/react@^16.3.11":
+  version "16.7.6"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.7.6.tgz#80e4bab0d0731ad3ae51f320c4b08bdca5f03040"
+  dependencies:
+    "@types/prop-types" "*"
+    csstype "^2.2.0"
+
+"@types/shallowequal@^0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@types/shallowequal/-/shallowequal-0.2.3.tgz#d25150c25ef5f128b65a154e33ad62f3134e0cd8"
 
 "@types/tapable@1.0.2":
   version "1.0.2"
@@ -2404,6 +2484,10 @@ cssstyle@^1.0.0, cssstyle@^1.1.1:
   resolved "https://registry.yarnpkg.com/cssstyle/-/cssstyle-1.1.1.tgz#18b038a9c44d65f7a8e428a653b9f6fe42faf5fb"
   dependencies:
     cssom "0.3.x"
+
+csstype@^2.2.0:
+  version "2.5.7"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.5.7.tgz#bf9235d5872141eccfb2d16d82993c6b149179ff"
 
 currently-unhandled@^0.4.1:
   version "0.4.1"
@@ -6036,6 +6120,10 @@ path-to-regexp@0.1.7:
   version "0.1.7"
   resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-0.1.7.tgz#df604178005f522f15eb4490e7247a1bfaa67f8c"
 
+path-to-regexp@^2.1.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-2.4.0.tgz#35ce7f333d5616f1c1e1bfe266c3aba2e5b2e704"
+
 path-type@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/path-type/-/path-type-1.1.0.tgz#59c44f7ee491da704da415da5a4070ba4f8fe441"
@@ -7534,6 +7622,10 @@ shallow-clone@^1.0.0:
     is-extendable "^0.1.1"
     kind-of "^5.0.0"
     mixin-object "^2.0.1"
+
+shallowequal@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/shallowequal/-/shallowequal-1.1.0.tgz#188d521de95b9087404fd4dcb68b13df0ae4e7f8"
 
 shebang-command@^1.2.0:
   version "1.2.0"

@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@curi/react-dom": "^1.2.0",
+    "@curi/router": "^1.1.0",
+    "@hickory/browser": "^1.0.2",
     "node-sass": "^4.10.0",
     "react": "^16.6.1",
     "react-dom": "^16.6.1",

@@ -6,7 +6,6 @@ const Footer = () => (
   <Fragment>
     <div className="footer">
       <Logo />
-
       <div className="text">
         Have a nice day
         <span role="img" aria-label="smile">
@@ -19,14 +18,37 @@ const Footer = () => (
           href="https://dribbble.com/casprine"
           target="_blank"
           rel="noopener noreferrer"
-          className="link"
+          className="link-inverse"
+        >
+          Dribbble
+        </a>
+        <a
+          href="https://www.uplabs.com/casprine"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="link-inverse"
         >
           {" "}
-          Dribbble{" "}
+          UpLabs{" "}
         </a>
-        <a href="https://www.uplabs.com/casprine"> UpLabs </a>
-        <a href="https://twitter.com/casprine_ix"> Twitter</a>
-        <a href="https://twitter.com/casprine_ix"> Github</a>
+        <a
+          href="https://twitter.com/casprine_ix"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="link-inverse"
+        >
+          {" "}
+          Twitter
+        </a>
+        <a
+          href="https://twitter.com/casprine_ix"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="link-inverse"
+        >
+          {" "}
+          Github
+        </a>
       </div>
     </div>
   </Fragment>
