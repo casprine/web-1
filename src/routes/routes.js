@@ -7,13 +7,13 @@ const Work = lazy(() => import("../components/pages/work"));
 
 const Main = () => (
   <Fragment>
-    <Suspense fallback={<div>Loading...</div>}>
-      <Switch>
-        <Route exact path="/" component={Home} />
+    <Switch>
+      <Route exact path="/" component={Home} />
+      <Suspense fallback={<div>Loading...</div>}>
         <Route exact path="/work" component={Work} />
         <Route exact path="/work" component={Design} />
-      </Switch>
-    </Suspense>
+      </Suspense>
+    </Switch>
   </Fragment>
 );
 
