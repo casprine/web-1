@@ -1,6 +1,14 @@
 @import "./assets/sass/variables";
 
 @font-face {
+  font-family: "geo";
+  src: url("./assets/fonts/geo.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
   font-family: "Book";
   src: url("./assets/fonts/CircularBook.ttf");
   font-weight: normal;

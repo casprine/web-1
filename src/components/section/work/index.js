@@ -19,8 +19,7 @@ const Projects = () => {
     <Fragment>
       <div className="personal-pro">
         {PersonalProjects.map(project => {
-          console.log(project);
-          return <ProjectCard {...project} />;
+          return <ProjectCard {...project} key={project.id} />;
         })}
       </div>
     </Fragment>
