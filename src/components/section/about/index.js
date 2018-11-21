@@ -5,7 +5,6 @@ import SkillSetData from "../../../data/index";
 import "./style.scss";
 
 const SkillSet = ({ name, description, image, skills }) => {
-  console.log(skills);
   return (
     <div className="skill">
       <div className="skill-icon">
@@ -48,10 +47,8 @@ class About extends Component {
 
 const AboutSectionWithLayout = () => (
   <Fragment>
-    <Layout>
-      <div className="padding">
-        <About />
-      </div>
+    <Layout height={100}>
+      <About />
     </Layout>
   </Fragment>
 );

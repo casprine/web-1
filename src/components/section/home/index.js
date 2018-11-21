@@ -7,8 +7,7 @@ const HomeHeader = () => {
     <Fragment>
       <div className="ca-homeHeader">
         <Header className="header" />
-
-        <div className="ca-homeHeader-content padding-side ">
+        <div className="ca-homeHeader-content">
           <div className="ca-emoji">
             <span role="img" aria-label="wavingHand">
               👋
@@ -36,7 +35,7 @@ const HomeHeader = () => {
           </div>
         </div>
 
-        <div className="ca-homeHeader-footer  padding-side center">
+        <div className="ca-homeHeader-footer center padding-bottom">
           <span role="img" className="more">
             {" "}
             Scroll Down👇{" "}
@@ -51,7 +50,7 @@ const HomeHeader = () => {
 const HomeHeaderWithLayout = () => {
   return (
     <Fragment>
-      <Layout>
+      <Layout height={100}>
         <HomeHeader />
       </Layout>
     </Fragment>

@@ -54,7 +54,6 @@ button {
 
 // Layout Styling
 .ca-layout {
-  height: 100vh;
   background-image: -webkit-radial-gradient(
     circle,
     #d7d7d7,
@@ -76,17 +75,14 @@ button {
     #fff 1px,
     #fff
   );
-  background-color: red;
   background-size: 28px 28px;
-  .ca-layout-children {
-    height: 100vh;
-  }
+  // .ca-layout-children {
+  //   // height: 100vh;
+  // }
 }
 
 // Section Styling
-
 .section {
-  // outline: 1px solid red;
   max-width: 50vw;
   font-family: "Book";
 

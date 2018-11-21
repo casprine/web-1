@@ -17,7 +17,7 @@ const Logo = () => (
 
 const Header = () => (
   <Fragment>
-    <nav className="ca-header padding center">
+    <nav className="ca-header padding-top center">
       <Logo />
       <ul className="ca-routes">
         <li className="link">Work</li>
@@ -28,11 +28,21 @@ const Header = () => (
   </Fragment>
 );
 
-const Layout = ({ children }) => {
+const Layout = ({ children, height }) => {
+  console.log(children, height);
+
+  const LayoutStyle = {
+    wrapper: {
+      height: height + "vh"
+    }
+  };
+
+  console.log(LayoutStyle);
+
   return (
     <Fragment>
-      <div className="ca-layout">
-        <div className="ca-layout-children">{children}</div>
+      <div className="ca-layout" style={LayoutStyle.wrapper}>
+        <div className="ca-layout-children padding-side">{children}</div>
       </div>
     </Fragment>
   );
