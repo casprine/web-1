@@ -3,8 +3,8 @@ import { Switch, Route } from "react-router-dom";
 
 // const Home = lazy(() => import("../components/pages/home"));
 import Home from "../components/pages/home";
-const Design = "../components/pages/design";
-const Work = "../components/pages/work";
+import Design from "../components/pages/design";
+import Work from "../components/pages/work";
 
 const Main = () => (
   <Fragment>
