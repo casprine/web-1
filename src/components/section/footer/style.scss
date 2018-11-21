@@ -1,3 +1,26 @@
+@import "../../../assets/sass/variables";
 .footer {
   background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 1px solid red;
+
+  .text {
+    margin-right: auto;
+    font-size: 17px;
+    span {
+      font-size: 17px;
+      margin-left: 10px;
+    }
+  }
+
+  .links {
+    * {
+      text-decoration: none;
+      color: $primary;
+      margin: 0 15px;
+      font-size: 17px;
+    }
+  }
 }
