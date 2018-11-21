@@ -53,10 +53,10 @@ const Layout = ({ children, height }) => {
   );
 };
 
-const SectionHeader = ({ title, about, description }) => {
+const SectionHeader = ({ title, about, description, className }) => {
   return (
     <Fragment>
-      <div className="section">
+      <div className={className + " section"}>
         <div className="section-title"> {title}</div>
         <div className="section-about"> {about} </div>
         <div className="section-description">{description}</div>
@@ -65,4 +65,20 @@ const SectionHeader = ({ title, about, description }) => {
   );
 };
 
-export { Button, Logo, Header, Layout, SectionHeader };
+const ProjectCard = () => {
+  return (
+    <Fragment>
+      <div className="project ">
+        <div className="project-name">Avil</div>
+        <div className="project-description">
+          A curated list of awesome tools and projects created by Ghanaians{" "}
+        </div>
+        <div className="project-stack">
+          <span> Javascript </span>
+        </div>
+      </div>
+    </Fragment>
+  );
+};
+
+export { Button, Logo, Header, Layout, SectionHeader, ProjectCard };
