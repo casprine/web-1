@@ -1,11 +1,10 @@
 import React, { Component, Fragment } from "react";
-import Home from "./components/pages/home.js";
-
+import Main from "./routes/index";
 class App extends Component {
   render() {
     return (
       <Fragment>
-        <Home />
+        <Main />
       </Fragment>
     );
   }

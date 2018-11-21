@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import { Link } from "react-router-dom";
 import "./style.scss";
 
 const Button = ({ content }) => (
@@ -20,9 +21,15 @@ const Header = () => (
     <nav className="ca-header padding-top center">
       <Logo />
       <ul className="ca-routes">
-        <li className="link">Work</li>
-        <li className="link">Design</li>
-        <li className="link">Writings</li>
+        <Link className="link" to="/work">
+          Work
+        </Link>
+        <Link className="link" to="/work">
+          Design
+        </Link>
+        <Link className="link" to="/work">
+          Writing
+        </Link>
       </ul>
     </nav>
   </Fragment>
