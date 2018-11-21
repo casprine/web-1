@@ -57,13 +57,9 @@ const SectionHeader = ({ title, about, description }) => {
   return (
     <Fragment>
       <div className="section">
-        <div className="section-title"> What I do </div>
-        <div className="section-about"> desgin. frontend. mobile. </div>
-        <div className="section-description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, ab
-          rerum! Sit ipsa odit, eveniet omnis autem quas nihil sunt suscipit
-          iure dignissimos eligendi harum, animi vitae nostrum officia alias.
-        </div>
+        <div className="section-title"> {title}</div>
+        <div className="section-about"> {about} </div>
+        <div className="section-description">{description}</div>
       </div>
     </Fragment>
   );

@@ -28,11 +28,11 @@ const SkillSet = ({ name, description, image, skills }) => {
 
 class About extends Component {
   render() {
-    const { SkillSetData } = data;
+    const { SkillSetData, HeadersData } = data;
     return (
       <Fragment>
         <div className="about">
-          <SectionHeader />
+          <SectionHeader {...HeadersData[0]} />
           <div className="about-skills">
             {SkillSetData.map(data => {
               return <SkillSet {...data} key={data.id} />;
