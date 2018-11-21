@@ -65,16 +65,22 @@ const SectionHeader = ({ title, about, description, className }) => {
   );
 };
 
-const ProjectCard = () => {
+const ProjectCard = ({ name, stacks, logoUrl: img, about }) => {
+  console.log(stacks);
   return (
     <Fragment>
-      <div className="project ">
-        <div className="project-name">Avil</div>
-        <div className="project-description">
-          A curated list of awesome tools and projects created by Ghanaians{" "}
+      <div className="project">
+        <div className="project-details">
+          <span className="name">{name}</span>
+          <span>
+            <img src={img} alt="" />
+          </span>
         </div>
+        <div className="project-description">{about}</div>
         <div className="project-stack">
-          <span> Javascript </span>
+          {stacks.map(stack => (
+            <span className="stack">{stack}</span>
+          ))}
         </div>
       </div>
     </Fragment>

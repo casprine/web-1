@@ -14,10 +14,14 @@ const WorkHeader = () => {
 };
 
 const Projects = () => {
+  const { PersonalProjects } = data;
   return (
     <Fragment>
       <div className="personal-pro">
-        <ProjectCard />
+        {PersonalProjects.map(project => {
+          console.log(project);
+          return <ProjectCard {...project} />;
+        })}
       </div>
     </Fragment>
   );
@@ -25,7 +29,7 @@ const Projects = () => {
 
 const WorkWithLayout = () => (
   <Fragment>
-    <Layout height={100}>
+    <Layout>
       <WorkHeader />
       <Projects />
     </Layout>

@@ -4,6 +4,10 @@
 
 .personal-pro {
   outline: 1px solid red;
-  display: center;
-  justify-content: center;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-left: -20px;
 }
