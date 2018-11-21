@@ -4,16 +4,9 @@
 
 .personal-pro {
   outline: 1px solid red;
-  grid-template-columns: 1fr 1fr 1fr;
-  // grid-template-columns: repeat(auto-fill, auto-fill);
-  grid-column-gap: 1em;
+  grid-template-columns: repeat(auto-fit, 420px);
+  grid-template-rows: 1fr;
   display: grid;
-  grid-column-gap: em(20);
-  grid-row-gap: em(10);
-
-  
-  // justify-content: space-evenly;
-  // align-items: center;
-  // flex-wrap: wrap;
-  // margin-left: -20px;
+  // grid-column-gap: 20px;
+  // grid-row-gap: 10px;
 }
