@@ -57,7 +57,7 @@ const Footer = () => (
 const FooterWithLayout = () => {
   return (
     <Fragment>
-      <Layout height={10}>
+      <Layout>
         <Footer />
       </Layout>
     </Fragment>

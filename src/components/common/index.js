@@ -46,8 +46,8 @@ const Layout = ({ children, height }) => {
 
   return (
     <Fragment>
-      <div className="ca-layout" style={LayoutStyle.wrapper}>
-        <div className="ca-layout-children padding-side">{children}</div>
+      <div style={LayoutStyle.wrapper}>
+        <div className="padding-side">{children}</div>
       </div>
     </Fragment>
   );
