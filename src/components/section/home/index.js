@@ -35,7 +35,7 @@ const HomeHeader = () => {
           </div>
         </div>
 
-        <div className="ca-homeHeader-footer center padding-bottom">
+        <div className="ca-homeHeader-footer center">
           <span role="img" className="more">
             {" "}
             Scroll Down👇{" "}

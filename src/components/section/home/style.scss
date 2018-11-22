@@ -3,13 +3,14 @@
 .ca-homeHeader {
   display: flex;
   flex-direction: column;
+  // outline: 1px solid red;
+  height: 100vh;
 
   &-content {
-    margin-top: 70px;
-
+    margin-top: auto;
+    // outline: 1px solid red;
     .ca-emoji {
       span {
-        background: white;
         padding-left: 8px;
         font-size: 50pt;
         text-align: center;
@@ -44,6 +45,7 @@
 
   &-footer {
     margin-top: auto;
+    padding-bottom: 20px;
     .more {
       margin-right: auto;
     }
