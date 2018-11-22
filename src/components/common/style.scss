@@ -85,7 +85,7 @@ button {
 // Section Styling
 .section {
   max-width: 50vw;
-  font-family: "Book";
+  font-family: "Book", $defaultFont;
 
   &-title {
     margin: 15px 0;
@@ -139,7 +139,7 @@ button {
   padding: 2.5rem 1.5rem;
   cursor: pointer;
   transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
-  font-family: "Book";
+  font-family: "Book", $defaultFont;
   flex-direction: column;
   -moz-box-orient: vertical;
   -moz-box-direction: normal;
@@ -156,7 +156,7 @@ button {
     letter-spacing: -0.03em;
     line-height: 1.1;
     word-wrap: break-word;
-    font-family: "Bold";
+    font-family: "Bold", $defaultFont;
     font-size: 1.5rem;
     display: flex;
     margin-bottom: 15px;
@@ -178,7 +178,7 @@ button {
       letter-spacing: -0.03em;
       line-height: 1.1;
       word-wrap: break-word;
-      font-family: "Bold";
+      font-family: "Bold", $defaultFont;
       font-size: 1.5rem;
     }
   }
@@ -190,7 +190,7 @@ button {
     font-size: 1rem;
     color: inherit;
     margin-bottom: 1rem;
-    font-family: "geo";
+    font-family: "geo", $defaultFont;
   }
 
   &-stack {
@@ -199,7 +199,7 @@ button {
     font-size: 17px;
     text-transform: lowercase;
     display: flex;
-    font-family: "geo";
+    font-family: "geo", $defaultFont;
     span {
       display: block;
       margin: 0 5px;
