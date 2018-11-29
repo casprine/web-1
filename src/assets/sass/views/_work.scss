@@ -1,9 +1,0 @@
-@import "components/w-content";
-
-.work-content {
-  padding: em(30) em(60);
-
-  @media (max-width: em(425)) {
-    padding: em(30) em(10);
-  }
-}
