@@ -1,0 +1,138 @@
+@import "./assets/sass/variables";
+
+@font-face {
+  font-family: "geo";
+  src: url("./assets/fonts/geo.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: "Book";
+  src: url("./assets/fonts/CircularBook.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: "Bold";
+  src: url("./assets/fonts/CircularBold.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: "Medium";
+  src: url("./assets/fonts/CircularMedium.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $primary;
+  scroll-behavior: smooth;
+  background-image: -webkit-radial-gradient(
+    circle,
+    #d7d7d7,
+    #d7d7d7 1px,
+    #fff 1px,
+    #fff
+  );
+  background-image: -moz-radial-gradient(
+    circle,
+    #d7d7d7,
+    #d7d7d7 1px,
+    #fff 1px,
+    #fff
+  );
+  background-image: radial-gradient(
+    circle,
+    #d7d7d7,
+    #d7d7d7 1px,
+    #fff 1px,
+    #fff
+  );
+  background-size: 28px 28px;
+}
+
+.ca-heading-big {
+  font-family: "Bold";
+}
+
+.ca-sub-heading {
+  font-family: "Book";
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.padding {
+  padding: 40px 90px;
+}
+
+.padding-side {
+  padding: 0 90px;
+}
+
+.padding-top {
+  padding-top: 40px;
+}
+
+.padding-bottom {
+  padding-bottom: 40px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  li {
+    list-style: none;
+  }
+}
+
+.link {
+  padding-bottom: 8px;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+  cursor: pointer;
+
+  &:hover {
+    padding-bottom: 4px;
+    border-bottom: 2px solid $primary;
+  }
+}
+
+.link-inverse {
+  padding-bottom: 8px;
+  border-bottom: 2px solid $primary;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+  cursor: pointer;
+
+  &:hover {
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $primary;
+}

@@ -1,0 +1,62 @@
+@import "../../../assets/sass/variables";
+
+.ca-homeHeader {
+  display: flex;
+  flex-direction: column;
+  // outline: 1px solid red;
+  height: 100vh;
+
+  &-content {
+    margin-top: auto;
+    // outline: 1px solid red;
+    .ca-emoji {
+      span {
+        padding-left: 8px;
+        font-size: 50pt;
+        text-align: center;
+        animation: waver 0.65s alternate infinite;
+        transform-origin: 50% 90%;
+        animation-timing-function: ease-in-out;
+      }
+    }
+
+    .ca-heading {
+      max-width: 800px;
+      margin-bottom: 50px;
+
+      &-big {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-top: 10px;
+        color: $primary;
+        font-size: 60px;
+        line-height: 65px;
+      }
+
+      .ca-sub-heading {
+        font-size: 22px;
+        line-height: 34px;
+        font-weight: 300;
+        margin-top: 20px;
+        color: $grey;
+      }
+    }
+  }
+
+  &-footer {
+    margin-top: auto;
+    padding-bottom: 20px;
+    .more {
+      margin-right: auto;
+    }
+  }
+}
+
+@keyframes waver {
+  0% {
+    transform: rotate(-25deg);
+  }
+  100% {
+    transform: rotate(30deg);
+  }
+}

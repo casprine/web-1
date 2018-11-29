@@ -1,0 +1,25 @@
+@import "../../../assets/sass/variables";
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+  .text {
+    margin: 0 auto;
+    font-size: 17px;
+
+    span {
+      font-size: 17px;
+      margin-left: 10px;
+    }
+  }
+
+  .links {
+    * {
+      text-decoration: none;
+      color: $grey;
+      margin: 0 15px;
+      font-size: 17px;
+    }
+  }
+}
