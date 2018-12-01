@@ -37,26 +37,20 @@ const Header = () => (
   </Fragment>
 );
 
-const Layout = ({ children, height }) => {
-  const LayoutStyle = {
-    wrapper: {
-      height: height + "vh"
-    }
-  };
-
+const Layout = ({ children }) => {
   return (
     <Fragment>
-      <div style={LayoutStyle.wrapper}>
-        <div className="padding-side">{children}</div>
+      <div className="padding-side">
+        <div className="">{children}</div>
       </div>
     </Fragment>
   );
 };
 
-const SectionHeader = ({ title, about, description, className }) => {
+const SectionHeader = ({ title, about, description }) => {
   return (
     <Fragment>
-      <div className={className + " section"}>
+      <div className="section">
         <div className="section-title"> {title}</div>
         <div className="section-about"> {about} </div>
         <div className="section-description">{description}</div>

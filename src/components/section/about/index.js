@@ -46,7 +46,7 @@ class About extends Component {
 
 const AboutSectionWithLayout = () => (
   <Fragment>
-    <Layout height={100}>
+    <Layout>
       <About />
     </Layout>
   </Fragment>

@@ -8,48 +8,67 @@
 
   &-content {
     margin-top: auto;
-    // outline: 1px solid red;
+     @media (max-width: 375px) {
+      margin-top: 70px;
+    }
     .ca-emoji {
-      span {
-        padding-left: 8px;
-        font-size: 50pt;
-        text-align: center;
-        animation: waver 0.65s alternate infinite;
-        transform-origin: 50% 90%;
-        animation-timing-function: ease-in-out;
-      }
+      outline: 1px solid red;
+    span {
+      padding-left: 8px;
+      font-size: 50pt;
+      text-align: center;
+      animation: waver 0.65s alternate infinite;
+      transform-origin: 50% 90%;
+      animation-timing-function: ease-in-out;
+      outline: 1px solid red;
+
+        @media (max-width: 375px) {
+      // display: none; 
+      font-size: 30pt;
     }
-
-    .ca-heading {
-      max-width: 800px;
-      margin-bottom: 50px;
-
-      &-big {
-        margin-top: 0px;
-        margin-bottom: 0px;
-        padding-top: 10px;
-        color: $primary;
-        font-size: 60px;
-        line-height: 65px;
-      }
-
-      .ca-sub-heading {
-        font-size: 22px;
-        line-height: 34px;
-        font-weight: 300;
-        margin-top: 20px;
-        color: $grey;
-      }
     }
   }
 
-  &-footer {
-    margin-top: auto;
-    padding-bottom: 20px;
-    .more {
-      margin-right: auto;
+  .ca-heading {
+    max-width: 800px;
+    margin-bottom: 50px;
+
+    &-big {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      padding-top: 10px;
+      color: $primary;
+      font-size: 60px;
+      line-height: 65px;
+
+      @media (max-width: 375px) {
+        font-size: 39px;
+        line-height: 44px;
+        outline: 1px solid red;
+
+      }
+    }
+
+    .ca-sub-heading {
+      font-size: 22px;
+      line-height: 34px;
+      font-weight: 300;
+      margin-top: 20px;
+      color: $grey;
     }
   }
+}
+
+&-footer {
+  margin-top: auto;
+  padding-bottom: 20px;
+  .more {
+    margin-right: auto;
+    @media (max-width: 375px) {
+      display: none;
+    }
+  }
+}
 }
 
 @keyframes waver {

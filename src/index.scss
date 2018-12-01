@@ -64,6 +64,15 @@ body {
     #fff
   );
   background-size: 28px 28px;
+
+  @media (max-width: 375px) {
+    // padding: 30px;
+    background: white;
+  }
+}
+
+* {
+  outline: 1px solid green;
 }
 
 .ca-heading-big {
@@ -80,10 +89,15 @@ code {
 
 .padding {
   padding: 40px 90px;
+  width: 90vw;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .padding-side {
-  padding: 0 90px;
+  width: 90vw;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .padding-top {

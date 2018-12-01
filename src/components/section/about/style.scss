@@ -1,7 +1,9 @@
 @import "../../../assets/sass/variables";
 
 .about {
-  padding: 130px 0;
+  // padding: 130px 0;
+  outline: 1px solid red;
+
   &-skills {
     display: flex;
     justify-content: space-between;
@@ -13,6 +15,7 @@
       height: 250px;
       background: white;
       padding: 20px 0;
+      outline: 1px solid red;
 
       &:nth-child(2) {
         margin: 0 10px;
@@ -67,15 +70,18 @@
             display: block;
             transition: 0.3s ease-in-out;
             pointer-events: all;
-            // filter: grayscale(100%);
             cursor: pointer;
             box-shadow: inset 0px 0px 10px 3px rgba(245, 245, 245, 1);
             &:hover {
-              filter: none;
+              filter: grayscale(100%);
             }
           }
         }
       }
     }
   }
+}
+
+* {
+  // outline: 1px solid red;
 }

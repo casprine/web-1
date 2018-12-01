@@ -50,7 +50,7 @@ const HomeHeader = () => {
 const HomeHeaderWithLayout = () => {
   return (
     <Fragment>
-      <Layout height={100}>
+      <Layout>
         <HomeHeader />
       </Layout>
     </Fragment>
