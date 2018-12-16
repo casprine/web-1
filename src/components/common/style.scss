@@ -94,10 +94,13 @@ button {
     text-rendering: auto;
     text-transform: capitalize;
     margin-bottom: 1rem;
+    outline: 1px solid red;
+    font-family: "Book";
     @media (max-width: 655px) {
       font-size: 27px;
       text-transform: lowercase;
-      font-family: "Bold";
+      font-family: "Book" $defaultFont;
+      outline: 1px solid red;
     }
   }
 
@@ -109,6 +112,7 @@ button {
     margin-bottom: 2rem;
     width: 100%;
     width: 50%;
+    outline: 1px solid red;
 
     @media (max-width: 655px) {
       font-size: 20px;
@@ -135,6 +139,7 @@ button {
   display: flex;
   margin: 10px 0;
   justify-content: space-evenly;
+  outline: 1px solid red;
 
   &:hover {
     transform: translate(0, -10px);
@@ -180,20 +185,18 @@ button {
     color: #1d2323;
     margin-bottom: 1rem;
     text-rendering: auto;
-    text-transform: lowercase;
     font-family: "Book", $defaultFont;
   }
 
   &-stack {
     margin-top: auto;
-    color: $grey;
+    // color: $grey;
     font-size: 17px;
-    text-transform: capitalize;
-    display: flex;
-    font-family: "geo", $defaultFont;
+    text-transform: lowercase;
     span {
       display: block;
       margin: 0 5px;
+      font-family: "italic", $defaultFont;
       &:first-child {
         margin-left: 0;
       }
@@ -290,4 +293,8 @@ button {
       }
     }
   }
+}
+
+* {
+  // outline: 1px solid red;
 }

@@ -25,11 +25,13 @@
 }
 
 @font-face {
-  font-family: "Medium";
-  src: url("./assets/fonts/CircularMedium.ttf");
+  font-family: "italic";
+  src: url("./assets/fonts/OperatorMono-BookItalic.otf");
   font-weight: normal;
   font-style: normal;
   font-display: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -76,7 +78,7 @@ body {
 }
 
 .ca-heading-big {
-  font-family: "Bold";
+  font-family: "Bold", $defaultFont;
 }
 
 .ca-sub-heading {
@@ -113,6 +115,10 @@ code {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 ul {

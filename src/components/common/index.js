@@ -71,7 +71,7 @@ const ProjectCard = ({ name, stacks, logoUrl: img, about, link }) => {
             </span>
           </div>
           <div className="project-description">{about}</div>
-          <div className="project-stack">
+          <div className="project-stack wrap">
             {stacks.map(stack => {
               return (
                 <span className="stack" key={stack}>
