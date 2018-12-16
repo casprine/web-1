@@ -42,7 +42,6 @@ button {
   cursor: pointer;
   background: white;
   transition: 0.3s ease-in-out;
-
   &:hover {
     border: 2px solid $secondary;
     color: $secondary;
@@ -159,6 +158,7 @@ button {
 
     span {
       display: block;
+      margin: auto 0;
     }
 
     .name {
@@ -185,7 +185,6 @@ button {
 
   &-stack {
     margin-top: auto;
-    // color: $grey;
     font-size: 17px;
     text-transform: lowercase;
     span {

@@ -5,7 +5,9 @@ import "./style.scss";
 const Footer = () => (
   <Fragment>
     <div className="footer">
-      <Logo />
+      <div className="pxw">
+        <Logo />
+      </div>
       <div className="text">
         Have a nice day
         <span role="img" aria-label="smile">

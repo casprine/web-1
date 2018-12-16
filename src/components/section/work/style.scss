@@ -2,11 +2,12 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  align-items: center;
+  justify-content: space-between;
+  // outline: 1px solid green;
 
   .project {
-    // margin-right: 20px;
-    flex-shrink: 1;
     // outline: 1px solid red;
   }
+  // justify-content: space-evenly;
 }
