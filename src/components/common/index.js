@@ -108,4 +108,37 @@ const SkillSet = ({ name, description, image, skills }) => {
   );
 };
 
-export { Button, Logo, Header, Layout, SectionHeader, ProjectCard, SkillSet };
+const DesignCard = () => {
+  return (
+    <div className="design-card">
+      <div className="design-card-top-left" tabIndex="1" />
+      <div class="design-card-top-right" tabindex="2" />
+      <div class="design-card-bottom-left" tabindex="3" />
+      <div class="design-card-bottom-right" tabindex="4" />
+
+      <div class="design-card-content">
+        <div class="design-card-front">
+          <h2>tvOS design-card demo</h2>
+        </div>
+        <div class="design-card-back">
+          <img
+            src="https://images.unsplash.com/photo-1544914118-b7a55a9ecca6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+            class="img-responsive rounded"
+            alt="imge"
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export {
+  Button,
+  Logo,
+  Header,
+  Layout,
+  SectionHeader,
+  ProjectCard,
+  SkillSet,
+  DesignCard
+};

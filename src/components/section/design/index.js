@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Header, Layout, SectionHeader, ProjectCard } from "../../common/index";
+import { Header, Layout, SectionHeader, DesignCard } from "../../common/index";
 import data from "../../../data/index";
 
 const DesginHeader = () => {
@@ -12,10 +12,21 @@ const DesginHeader = () => {
   );
 };
 
+const Designs = () => {
+  return (
+    <Fragment>
+      <div className="designs">
+        <DesignCard />
+      </div>
+    </Fragment>
+  );
+};
+
 const DesignWithLayout = () => (
   <Fragment>
     <Layout>
       <DesginHeader />
+      <Designs />
     </Layout>
   </Fragment>
 );
