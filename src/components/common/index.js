@@ -30,7 +30,7 @@ const Header = () => (
           Design
         </NavLink>
         <NavLink activeClassName="active-link" className="link" to="/writings">
-          Writing
+          Writings
         </NavLink>
       </ul>
     </nav>
@@ -47,10 +47,10 @@ const Layout = ({ children }) => {
   );
 };
 
-const SectionHeader = ({ title, about, description, id }) => {
+const SectionHeader = ({ title, about, description }) => {
   return (
     <Fragment>
-      <div className="section" id={id}>
+      <div className="section">
         <div className="section-title"> {title}</div>
         <div className="section-about"> {about} </div>
         <div className="section-description">{description}</div>

@@ -23,7 +23,6 @@ button {
 
 // Header styling
 .ca-header {
-  height: 20px;
   .ca-routes {
     display: flex;
     width: 250px;
@@ -57,6 +56,7 @@ button {
   width: 100%;
   font-family: "Book", $defaultFont;
   margin-top: 80px;
+
   &-title {
     margin: 15px 0;
     font-size: 1.5rem;
@@ -67,7 +67,7 @@ button {
 
     @media (max-width: 655px) {
       font-size: 20px;
-      text-transform: uppercase;
+      text-transform: lowercase;
     }
 
     &:before {
@@ -83,7 +83,6 @@ button {
   }
 
   &-about {
-    font-weight: 700;
     letter-spacing: -0.03em;
     line-height: 1.1;
     word-wrap: break-word;
@@ -93,6 +92,8 @@ button {
     text-transform: capitalize;
     margin-bottom: 1rem;
     font-family: "Book";
+    font-family: "alegreya", $defaultFont;
+
     @media (max-width: 655px) {
       font-size: 27px;
       text-transform: lowercase;
@@ -143,7 +144,7 @@ button {
     letter-spacing: -0.03em;
     line-height: 1.1;
     word-wrap: break-word;
-    font-family: "Bold", $defaultFont;
+    font-family: "alegreya", $defaultFont;
     font-size: 1.5rem;
     display: flex;
     margin-bottom: 20px;
@@ -166,7 +167,7 @@ button {
       color: $primary;
       line-height: 1.1;
       word-wrap: break-word;
-      font-family: "Bold", $defaultFont;
+      font-family: "alegreya", $defaultFont;
       font-size: 1.5rem;
     }
   }
@@ -189,7 +190,8 @@ button {
     span {
       display: block;
       margin: 0 5px;
-      font-family: "italic", $defaultFont;
+      color: $grey;
+      font-family: "alegreya", $defaultFont;
       &:first-child {
         margin-left: 0;
       }

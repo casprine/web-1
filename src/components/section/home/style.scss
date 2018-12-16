@@ -3,7 +3,7 @@
 .ca-homeHeader {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
 
   &-content {
     margin-top: auto;
@@ -18,7 +18,6 @@
         animation: waver 0.65s alternate infinite;
         animation-timing-function: ease-in-out;
         width: 20px;
-        // outline: 1px solid red;
         @media (max-width: 655px) {
           font-size: 30pt;
         }
@@ -38,8 +37,8 @@
         line-height: 65px;
 
         @media (max-width: 655px) {
-          font-size: 30px;
-          line-height: 44px;
+          font-size: 35px;
+          line-height: 40px;
         }
       }
 

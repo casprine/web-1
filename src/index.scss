@@ -1,14 +1,6 @@
 @import "./assets/sass/variables";
 
 @font-face {
-  font-family: "geo";
-  src: url("./assets/fonts/geo.ttf");
-  font-weight: normal;
-  font-style: normal;
-  font-display: auto;
-}
-
-@font-face {
   font-family: "Book";
   src: url("./assets/fonts/CircularBook.ttf");
   font-weight: normal;
@@ -17,16 +9,8 @@
 }
 
 @font-face {
-  font-family: "Bold";
-  src: url("./assets/fonts/CircularBold.ttf");
-  font-weight: normal;
-  font-style: normal;
-  font-display: auto;
-}
-
-@font-face {
-  font-family: "italic";
-  src: url("./assets/fonts/OperatorMono-BookItalic.otf");
+  font-family: "alegreya";
+  src: url("./assets/fonts/alegreya.ttf");
   font-weight: normal;
   font-style: normal;
   font-display: auto;
@@ -35,7 +19,6 @@
 }
 
 body {
-  margin: 0;
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -72,13 +55,8 @@ body {
     background: white;
   }
 }
-
-* {
-  // outline: 1px solid green;
-}
-
 .ca-heading-big {
-  font-family: "Bold", $defaultFont;
+  font-family: "alegreya", $defaultFont;
 }
 
 .ca-sub-heading {
@@ -146,7 +124,6 @@ ul {
   -webkit-transition: all 200ms ease;
   transition: all 200ms ease;
   cursor: pointer;
-  // outline: 1px solid red;
   display: inline-table;
 
   &:hover {
