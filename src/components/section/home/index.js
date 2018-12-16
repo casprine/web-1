@@ -37,8 +37,10 @@ const HomeHeader = () => {
 
         <div className="ca-homeHeader-footer center">
           <span role="img" className="more">
-            {" "}
-            Scroll Down👇{" "}
+            <span> Scroll Down</span>
+            <span role="img" className="scroll-down" aria-label="finger">
+              👇
+            </span>
           </span>
           <Button content="Hire Me 👨🏿‍💻" />
         </div>

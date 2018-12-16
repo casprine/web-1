@@ -1,13 +1,20 @@
 @import "../../../assets/sass/variables";
 .footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  margin: 50px 0;
+  flex-wrap: wrap;
+  margin: 100px 0;
+
   .text {
     margin: 0 auto;
     font-size: 17px;
 
+    @media (max-width: 655px) {
+      width: 100%;
+      margin: 40px 0;
+      font-family: "Book";
+    }
     span {
       font-size: 17px;
       margin-left: 10px;
@@ -15,11 +22,28 @@
   }
 
   .links {
-    * {
+    // outline: 1px solid red;
+
+    @media (max-width: 655px) {
+      display: grid;
+      width: 100%;
+    }
+    a {
       text-decoration: none;
       color: $grey;
       margin: 0 15px;
+      font-family: "Book";
       font-size: 17px;
+      @media (max-width: 655px) {
+        margin: 10px 0;
+      }
     }
+  }
+}
+
+.link-inverse {
+  border: none !important;
+  &:hover {
+    padding-bottom: none;
   }
 }

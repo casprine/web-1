@@ -72,7 +72,7 @@ body {
 }
 
 * {
-  outline: 1px solid green;
+  // outline: 1px solid green;
 }
 
 .ca-heading-big {
@@ -93,21 +93,22 @@ code {
   margin-right: auto;
   margin-left: auto;
 }
-
 .padding-side {
-  width: 90vw;
+  width: 85vw;
   margin-right: auto;
   margin-left: auto;
 }
-
 .padding-top {
   padding-top: 40px;
 }
-
 .padding-bottom {
   padding-bottom: 40px;
 }
-
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .center {
   display: flex;
   justify-content: center;

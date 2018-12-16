@@ -10,7 +10,7 @@ const Button = ({ content }) => (
 
 const Logo = () => (
   <Fragment>
-    <Link to="/">
+    <Link href="/" to="/">
       <div className="ca-logo center">
         <div> C </div>
       </div>
@@ -41,16 +41,16 @@ const Layout = ({ children }) => {
   return (
     <Fragment>
       <div className="padding-side">
-        <div className="">{children}</div>
+        <div>{children}</div>
       </div>
     </Fragment>
   );
 };
 
-const SectionHeader = ({ title, about, description }) => {
+const SectionHeader = ({ title, about, description, id }) => {
   return (
     <Fragment>
-      <div className="section">
+      <div className="section" id={id}>
         <div className="section-title"> {title}</div>
         <div className="section-about"> {about} </div>
         <div className="section-description">{description}</div>
@@ -67,7 +67,7 @@ const ProjectCard = ({ name, stacks, logoUrl: img, about, link }) => {
           <div className="project-details">
             <span className="name">{name}</span>
             <span>
-              <img src={img} alt="" />
+              <img src={img} alt={name} />
             </span>
           </div>
           <div className="project-description">{about}</div>
@@ -86,4 +86,26 @@ const ProjectCard = ({ name, stacks, logoUrl: img, about, link }) => {
   );
 };
 
-export { Button, Logo, Header, Layout, SectionHeader, ProjectCard };
+const SkillSet = ({ name, description, image, skills }) => {
+  return (
+    <div className="skill">
+      <div className="skill-icon">
+        <img src={image} alt="" className="img" />
+      </div>
+      <div className="skill-name"> {name} </div>
+      <div className="skill-description">{description} </div>
+
+      <div className="skill-skillsets">
+        {skills.map(skill => {
+          return (
+            <span className="skillset" key={skill.id}>
+              <img src={skill.imgLink} alt="" />
+            </span>
+          );
+        })}
+      </div>
+    </div>
+  );
+};
+
+export { Button, Logo, Header, Layout, SectionHeader, ProjectCard, SkillSet };

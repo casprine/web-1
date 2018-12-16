@@ -5,7 +5,7 @@ import Home from "../components/pages/home";
 import Design from "../components/pages/design";
 import Work from "../components/pages/work";
 
-const Main = () => (
+const MainView = () => (
   <Fragment>
     <Switch>
       <Route exact path="/" component={Home} />
@@ -15,4 +15,4 @@ const Main = () => (
   </Fragment>
 );
 
-export default Main;
+export default MainView;

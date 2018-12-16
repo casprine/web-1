@@ -24,7 +24,6 @@ button {
 // Header styling
 .ca-header {
   height: 20px;
-  // outline: 1px solid red;
   .ca-routes {
     display: flex;
     width: 250px;
@@ -56,13 +55,9 @@ button {
 
 // Section Styling
 .section {
-  width: 50vw;
+  width: 100%;
   font-family: "Book", $defaultFont;
-
-  @media (max-width: 375px) {
-    width: 100vw;
-    // outline: 1px solid red;
-  }
+  margin-top: 80px;
 
   &-title {
     margin: 15px 0;
@@ -71,7 +66,11 @@ button {
     margin-bottom: 0.5rem;
     padding-left: 4rem;
     position: relative;
-    // outline: 1px solid red;
+
+    @media (max-width: 655px) {
+      font-size: 20px;
+      text-transform: uppercase;
+    }
 
     &:before {
       position: absolute;
@@ -95,6 +94,11 @@ button {
     text-rendering: auto;
     text-transform: capitalize;
     margin-bottom: 1rem;
+    @media (max-width: 655px) {
+      font-size: 27px;
+      text-transform: lowercase;
+      font-family: "Bold";
+    }
   }
 
   &-description {
@@ -103,13 +107,20 @@ button {
     font-size: 1.4rem;
     color: $grey;
     margin-bottom: 2rem;
+    width: 100%;
+    width: 50%;
+
+    @media (max-width: 655px) {
+      font-size: 20px;
+      width: 100%;
+    }
   }
 }
 
 // ProjectCard styling
 .project {
   background: white;
-  width: 350px;
+  width: 340px;
   height: 100px;
   border-top: 5px solid $primary;
   box-shadow: rgba(0, 0, 0, 0.07) 0px 5px 15px,
@@ -124,6 +135,11 @@ button {
   display: flex;
   margin: 10px 0;
   justify-content: space-evenly;
+
+  @media (max-width: 655px) {
+    width: 270px;
+  }
+
   &:hover {
     transform: translate(0, -10px);
     border-top: 5px solid $secondary;
@@ -151,8 +167,8 @@ button {
 
     .name {
       margin-right: auto;
-
       letter-spacing: -0.03em;
+      color: $primary;
       line-height: 1.1;
       word-wrap: break-word;
       font-family: "Bold", $defaultFont;
@@ -165,16 +181,18 @@ button {
     letter-spacing: -0.02em;
     line-height: 1.4;
     font-size: 1rem;
-    color: inherit;
+    color: #1d2323;
     margin-bottom: 1rem;
-    font-family: "geo", $defaultFont;
+    text-rendering: auto;
+    text-transform: lowercase;
+    font-family: "Book", $defaultFont;
   }
 
   &-stack {
     margin-top: auto;
     color: $grey;
     font-size: 17px;
-    text-transform: lowercase;
+    text-transform: capitalize;
     display: flex;
     font-family: "geo", $defaultFont;
     span {
@@ -192,5 +210,88 @@ button {
 
   &:hover {
     border-bottom: 2px solid transparent;
+  }
+}
+
+// skill styling
+
+.skill {
+  width: 300px;
+  height: 250px;
+  background: white;
+  padding: 20px 40px;
+  margin: 10px 0;
+  border: 5px solid $grey;
+
+  @media (max-width: 650px) {
+    margin-right: 0;
+    height: auto;
+    width: 80vw;
+    padding: 10px 20px;
+  }
+  &:nth-child(2) {
+    margin: 0 auto;
+
+    .img {
+      margin-left: -8px;
+      display: block;
+      @media (max-width: 650px) {
+        margin: none;
+      }
+    }
+  }
+
+  &-icon {
+    margin-bottom: 20px;
+    .img {
+      display: block;
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  &-name {
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Book", $defaultFont;
+    letter-spacing: -0.02em;
+    margin-bottom: 2rem;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+
+  &-description {
+    letter-spacing: -0.02em;
+    line-height: 1.4;
+    color: inherit;
+    font-weight: 300;
+    margin-bottom: 20px;
+    font-size: 17px;
+    color: $grey;
+  }
+
+  &-skillsets {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 350px;
+
+    .skillset {
+      margin: 5px;
+      img {
+        border-radius: 2px;
+        width: 40px;
+        height: 40px;
+        display: block;
+        transition: 0.3s ease-in-out;
+        pointer-events: all;
+        cursor: pointer;
+        box-shadow: inset 0px 0px 10px 3px rgba(245, 245, 245, 1);
+        &:hover {
+          filter: grayscale(100%);
+        }
+      }
+    }
   }
 }
