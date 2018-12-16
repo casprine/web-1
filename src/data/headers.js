@@ -8,7 +8,7 @@ const Headers = [
   },
   {
     title: "projects i have worked on",
-    about: "frontend. design.",
+    about: "frontend. design. Open Source",
     description: ` Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, ab
       rerum! Sit ipsa odit, eveniet .`
   }

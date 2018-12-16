@@ -5,7 +5,10 @@
   align-items: center;
   flex-wrap: wrap;
   margin: 100px 0;
-
+  outline: 1px solid red;
+  * {
+    outline: 1px solid red;
+  }
   .text {
     margin: 0 auto;
     font-size: 17px;
