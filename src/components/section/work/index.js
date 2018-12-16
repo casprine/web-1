@@ -8,7 +8,7 @@ const WorkHeader = () => {
   return (
     <Fragment>
       <Header />
-      <SectionHeader {...HeadersData[1]} className="data" />
+      <SectionHeader {...HeadersData[1]} />
     </Fragment>
   );
 };
