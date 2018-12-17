@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import { Header, Layout, SectionHeader, DesignCard } from "../../common/index";
 import data from "../../../data/index";
+import "./style.scss";
 
 const DesginHeader = () => {
   const { HeadersData } = data;
@@ -16,6 +17,11 @@ const Designs = () => {
   return (
     <Fragment>
       <div className="designs">
+        <DesignCard />
+        <DesignCard />
+        <DesignCard />
+        <DesignCard />
+        <DesignCard />
         <DesignCard />
       </div>
     </Fragment>

@@ -291,178 +291,36 @@ button {
 }
 
 // DesignCard styling
+.design-card {
+  width: 350px;
+  height: 400px;
+  margin: 50px 0;
+  background: white;
+  cursor: pointer;
+  box-shadow: 10px 3rem 2.1rem rgba(69, 77, 93, 0.3);
+  .image {
+    width: 350px;
+    height: 350px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-image: url("https://cdn.dribbble.com/users/1805359/screenshots/4355847/casprine_ui_designs-03.png");
+    background-size: auto 350px;
+    background-repeat: no-repeat;
+    background-color: $primary;
+    transition: all 0.5s ease;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  }
 
-// $design-card-deg: 3deg !default;
-// $design-card-offset: 4.5px !default;
-// $design-card-offset-z: 50px !default;
-// $design-card-perspective: 1000px !default;
-// $design-card-scale: 0.95 !default;
-// $design-card-fade-color: rgba(255, 255, 255, 0.35) !default;
+  .details {
+    padding: 20px;
+    background: white;
+    font-family: "Book", $defaultFont;
 
-// // Mixin: design-card direction
-// @mixin design-card-dir() {
-//   height: 50%;
-//   outline: none;
-//   position: absolute;
-//   width: 50%;
-//   z-index: $zindex-1;
-// }
-
-// .design-card {
-//   display: block;
-//   height: auto;
-//   position: relative;
-//   width: auto;
-
-//   .design-card-content {
-//     // @include shadow-variant(1rem);
-//     height: auto;
-//     transform: perspective($design-card-perspective);
-//     transform-style: preserve-3d;
-//     transition: all 0.4s ease;
-//     width: 100%;
-
-//     &::before {
-//       content: "";
-//       display: block;
-//       height: 100%;
-//       left: 0;
-//       position: absolute;
-//       top: 0;
-//       width: 100%;
-//     }
-//   }
-
-//   .design-card-front {
-//     align-items: center;
-//     color: #fff;
-//     display: flex;
-//     height: 100%;
-//     justify-content: center;
-//     left: 0;
-//     position: absolute;
-//     text-align: center;
-//     text-shadow: 0 0 20px rgba(69, 77, 93, 0.75);
-//     top: 0;
-//     transform: translateZ($design-card-offset-z) scale($design-card-scale);
-//     transition: all 0.4s ease;
-//     width: 100%;
-//     z-index: 1;
-//   }
-
-//   .design-card-top-left {
-//     @include design-card-dir();
-//     left: 0;
-//     top: 0;
-
-//     &:focus ~ .design-card-content,
-//     &:hover ~ .design-card-content {
-//       transform: perspective($design-card-perspective) rotateX($design-card-deg)
-//         rotateY(-$design-card-deg);
-
-//       &::before {
-//         background: linear-gradient(
-//           135deg,
-//           $design-card-fade-color 0%,
-//           transparent 50%
-//         );
-//       }
-
-//       .design-card-front {
-//         transform: translate3d(
-//             $design-card-offset,
-//             $design-card-offset,
-//             $design-card-offset-z
-//           )
-//           scale($design-card-scale);
-//       }
-//     }
-//   }
-
-//   .design-card-top-right {
-//     @include design-card-dir();
-//     right: 0;
-//     top: 0;
-
-//     &:focus ~ .design-card-content,
-//     &:hover ~ .design-card-content {
-//       transform: perspective($design-card-perspective) rotateX($design-card-deg)
-//         rotateY($design-card-deg);
-
-//       &::before {
-//         background: linear-gradient(
-//           -135deg,
-//           $design-card-fade-color 0%,
-//           transparent 50%
-//         );
-//       }
-
-//       .design-card-front {
-//         transform: translate3d(
-//             -$design-card-offset,
-//             $design-card-offset,
-//             $design-card-offset-z
-//           )
-//           scale($design-card-scale);
-//       }
-//     }
-//   }
-
-//   .design-card-bottom-left {
-//     @include design-card-dir();
-//     bottom: 0;
-//     left: 0;
-
-//     &:focus ~ .design-card-content,
-//     &:hover ~ .design-card-content {
-//       transform: perspective($design-card-perspective)
-//         rotateX(-$design-card-deg) rotateY(-$design-card-deg);
-
-//       &::before {
-//         background: linear-gradient(
-//           45deg,
-//           $design-card-fade-color 0%,
-//           transparent 50%
-//         );
-//       }
-
-//       .design-card-front {
-//         transform: translate3d(
-//             $design-card-offset,
-//             -$design-card-offset,
-//             $design-card-offset-z
-//           )
-//           scale($design-card-scale);
-//       }
-//     }
-//   }
-
-//   .design-card-bottom-right {
-//     @include design-card-dir();
-//     bottom: 0;
-//     right: 0;
-
-//     &:focus ~ .design-card-content,
-//     &:hover ~ .design-card-content {
-//       transform: perspective($design-card-perspective)
-//         rotateX(-$design-card-deg) rotateY($design-card-deg);
-
-//       &::before {
-//         background: linear-gradient(
-//           -45deg,
-//           $design-card-fade-color 0%,
-//           transparent 50%
-//         );
-//       }
-
-//       .design-card-front {
-//         transform: translate3d(
-//             -$design-card-offset,
-//             -$design-card-offset,
-//             $design-card-offset-z
-//           )
-//           scale($design-card-scale);
-//       }
-//     }
-//   }
-// }
+    span {
+      font-size: 20px;
+      font-family: "alegreya", $defaultFont;
+      margin-right: 5px;
+      color: $primary;
+    }
+  }
+}
