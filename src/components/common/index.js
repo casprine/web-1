@@ -120,7 +120,6 @@ const DesignCard = ({ img: imageUrl, name, description }) => {
     </div>
   );
 };
-
 export {
   Button,
   Logo,
@@ -129,5 +128,5 @@ export {
   SectionHeader,
   ProjectCard,
   SkillSet,
-  DesignCard
+  DesignCard,
 };
