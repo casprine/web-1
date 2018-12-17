@@ -1,4 +1,4 @@
-import React, { Fragment, Component } from "react";
+import React, { Fragment } from "react";
 import { SectionHeader, Layout, SkillSet } from "../../common/index";
 import data from "../../../data/index";
 import "./style.scss";

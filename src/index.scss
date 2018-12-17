@@ -26,6 +26,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: $primary;
+
   scroll-behavior: smooth;
   background-image: -webkit-radial-gradient(
     circle,
@@ -51,7 +52,6 @@ body {
   background-size: 28px 28px;
 
   @media (max-width: 375px) {
-    // padding: 30px;
     background: white;
   }
 }
@@ -76,6 +76,7 @@ code {
 .padding-side {
   width: 85vw;
   margin-right: auto;
+
   margin-left: auto;
 }
 .padding-top {
