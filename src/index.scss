@@ -5,7 +5,7 @@
   src: url("./assets/fonts/CircularBook.ttf");
   font-weight: normal;
   font-style: normal;
-  font-display: auto;
+  font-display: swap;
 }
 
 @font-face {
@@ -13,7 +13,7 @@
   src: url("./assets/fonts/alegreya.ttf");
   font-weight: normal;
   font-style: normal;
-  font-display: auto;
+  font-display: swap;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
