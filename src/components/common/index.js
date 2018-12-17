@@ -5,7 +5,7 @@ import "./style.scss";
 const Button = ({ content }) => {
   return (
     <Fragment>
-      <a href="mailto:casprine.001@gmail.com?subject=SweetWords">
+      <a href="mailto:casprine.001@gmail.com?subject=Job Opportunity">
         <button> {content} </button>
       </a>
     </Fragment>
