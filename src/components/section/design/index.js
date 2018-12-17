@@ -14,15 +14,13 @@ const DesginHeader = () => {
 };
 
 const Designs = () => {
+  const { PersonalDesigns } = data;
   return (
     <Fragment>
       <div className="designs">
-        <DesignCard />
-        <DesignCard />
-        <DesignCard />
-        <DesignCard />
-        <DesignCard />
-        <DesignCard />
+        {PersonalDesigns.map(design => (
+          <DesignCard {...design} key={design.id} />
+        ))}
       </div>
     </Fragment>
   );

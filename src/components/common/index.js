@@ -108,14 +108,21 @@ const SkillSet = ({ name, description, image, skills }) => {
   );
 };
 
-const DesignCard = () => {
+const DesignCard = ({ img: imageUrl, name, description }) => {
+  const style = {
+    image: {
+      outline: "1px solid red",
+      backgroundImage: "url(" + imageUrl + ")"
+    }
+  };
+
   return (
     <div className="design-card">
-      <div className="image" />
+      <div style={style.image} className="image" />
       <div className="details">
         <div>
-          <span>Design Name</span>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ut?
+          <span>{name},</span>
+          {description}
         </div>
       </div>
     </div>

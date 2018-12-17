@@ -292,10 +292,10 @@ button {
 
 // DesignCard styling
 .design-card {
-  max-width: 350px;
+  width: 350px;
   height: 400px;
   margin: 50px 0;
-  background: white;
+  // outline: 1px solid red;
   cursor: pointer;
   box-shadow: 10px 3rem 2.1rem rgba(69, 77, 93, 0.3);
 
@@ -304,7 +304,6 @@ button {
     height: 350px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    background-image: url("https://cdn.dribbble.com/users/1805359/screenshots/4355847/casprine_ui_designs-03.png");
     background-size: auto 350px;
     background-repeat: no-repeat;
     background-color: $primary;
@@ -321,7 +320,7 @@ button {
     padding: 20px;
     background: white;
     font-family: "Book", $defaultFont;
-
+    text-transform: lowercase;
     span {
       font-size: 20px;
       font-family: "alegreya", $defaultFont;
