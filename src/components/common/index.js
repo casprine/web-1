@@ -1,34 +1,13 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment } from "react";
 import { NavLink, Link } from "react-router-dom";
 import "./style.scss";
 
 const Button = ({ content }) => {
-  const [status, toggleModal] = useState(false);
-
-  const styles = {
-    open: {
-      display: "block"
-    },
-    close: {
-      display: "none"
-    }
-  };
-
   return (
     <Fragment>
-      <button onClick={() => toggleModal(true)}> {content} </button>
-
-      <div
-        className="modal"
-        style={status === true ? styles.open : styles.close}
-      >
-        <div className="modal-content">
-          <span className="close" onClick={() => toggleModal(false)}>
-            &times;
-          </span>
-          <p>Some text in the Modal..</p>
-        </div>
-      </div>
+      <a href="mailto:casprine.001@gmail.com?subject=SweetWords">
+        <button> {content} </button>
+      </a>
     </Fragment>
   );
 };
