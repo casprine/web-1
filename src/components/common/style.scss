@@ -210,39 +210,13 @@ button {
 // skill styling
 
 .skill {
-  max-width: 300px;
-  height: 250px;
+  width: 350px;
+  height: 200px;
+  // padding: 15px;
   background: white;
-  padding: 20px 40px;
+  outline: 1px solid red;
   margin: 10px 0;
   border: 5px solid $grey;
-
-  @media (max-width: 650px) {
-    margin-right: 0;
-    height: auto;
-    width: 80vw;
-    padding: 10px 20px;
-  }
-  &:nth-child(2) {
-    margin: 0 auto;
-
-    .img {
-      margin-left: -8px;
-      display: block;
-      @media (max-width: 650px) {
-        margin: none;
-      }
-    }
-  }
-
-  &-icon {
-    margin-bottom: 20px;
-    .img {
-      display: block;
-      width: 50px;
-      height: 50px;
-    }
-  }
 
   &-name {
     text-transform: capitalize;
@@ -273,19 +247,11 @@ button {
 
     .skillset {
       margin: 5px;
-      img {
-        border-radius: 2px;
-        width: 40px;
-        height: 40px;
-        display: block;
-        transition: 0.3s ease-in-out;
-        pointer-events: all;
-        cursor: pointer;
-        box-shadow: inset 0px 0px 10px 3px rgba(245, 245, 245, 1);
-        &:hover {
-          filter: grayscale(100%);
-        }
-      }
+      padding: 4px 7px;
+      border-radius: 3px;
+      font-size: 15px;
+      color: white;
+      background: $primary;
     }
   }
 }
@@ -302,7 +268,6 @@ button {
   .image {
     max-width: 350px;
     height: 350px;
-    // visibility: hidden;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     background-size: auto 350px;
@@ -323,17 +288,10 @@ button {
     text-transform: lowercase;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 
-    // box-shadow: 0px 1rem 2.1rem rgba(69, 77, 93, 0.3);
-
     span {
-      // font-size: 20px;
       font-family: "alegreya", $defaultFont;
       margin-right: 5px;
       color: $primary;
     }
   }
-}
-
-* {
-  // outline: 1px solid black;
 }

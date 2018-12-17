@@ -3,28 +3,32 @@ import { SectionHeader, Layout, SkillSet } from "../../common/index";
 import data from "../../../data/index";
 import "./style.scss";
 
-class About extends Component {
-  render() {
-    const { SkillSetData, HeadersData } = data;
-    return (
-      <Fragment>
-        <div className="about">
-          <SectionHeader {...HeadersData[0]} />
-          <div className="about-skills">
-            {SkillSetData.map(data => {
-              return <SkillSet {...data} key={data.id} />;
-            })}
-          </div>
-        </div>
-      </Fragment>
-    );
-  }
-}
+const AboutHeader = () => {
+  const { HeadersData } = data;
+  return (
+    <Fragment>
+      <SectionHeader {...HeadersData[0]} />
+    </Fragment>
+  );
+};
 
+const Skills = () => {
+  const { SkillSetData } = data;
+  return (
+    <Fragment>
+      <div className="skills">
+        {SkillSetData.map(data => {
+          return <SkillSet {...data} key={data.id} />;
+        })}
+      </div>
+    </Fragment>
+  );
+};
 const AboutSectionWithLayout = () => (
   <Fragment>
     <Layout>
-      <About />
+      <AboutHeader />
+      <Skills />
     </Layout>
   </Fragment>
 );

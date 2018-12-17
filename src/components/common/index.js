@@ -72,13 +72,11 @@ const ProjectCard = ({ name, stacks, logoUrl: img, about, link }) => {
           </div>
           <div className="project-description">{about}</div>
           <div className="project-stack wrap">
-            {stacks.map(stack => {
-              return (
-                <span className="stack" key={stack}>
-                  {stack}
-                </span>
-              );
-            })}
+            {stacks.map((stack, i) => (
+              <span className="stack" key={i}>
+                {stack}
+              </span>
+            ))}
           </div>
         </div>
       </a>
@@ -86,23 +84,18 @@ const ProjectCard = ({ name, stacks, logoUrl: img, about, link }) => {
   );
 };
 
-const SkillSet = ({ name, description, image, skills }) => {
+const SkillSet = ({ name, description, skills }) => {
   return (
     <div className="skill">
-      <div className="skill-icon">
-        <img src={image} alt="" className="img" />
-      </div>
       <div className="skill-name"> {name} </div>
       <div className="skill-description">{description} </div>
 
       <div className="skill-skillsets">
-        {skills.map(skill => {
-          return (
-            <span className="skillset" key={skill.id}>
-              <img src={skill.imgLink} alt="" />
-            </span>
-          );
-        })}
+        {skills.map((skill, i) => (
+          <span className="skillset" key={i}>
+            {skill}
+          </span>
+        ))}
       </div>
     </div>
   );

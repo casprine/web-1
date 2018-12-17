@@ -1,11 +1,9 @@
 @import "../../../assets/sass/variables";
 
-.about {
-  padding: none;
-  &-skills {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+.skills {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
