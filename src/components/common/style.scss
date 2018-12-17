@@ -292,14 +292,15 @@ button {
 
 // DesignCard styling
 .design-card {
-  width: 350px;
+  max-width: 350px;
   height: 400px;
   margin: 50px 0;
   background: white;
   cursor: pointer;
   box-shadow: 10px 3rem 2.1rem rgba(69, 77, 93, 0.3);
+
   .image {
-    width: 350px;
+    max-width: 350px;
     height: 350px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -309,6 +310,11 @@ button {
     background-color: $primary;
     transition: all 0.5s ease;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+
+    @media (max-width: 650px) {
+      height: 300px;
+      background-size: auto 300px;
+    }
   }
 
   .details {
