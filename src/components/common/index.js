@@ -111,7 +111,6 @@ const SkillSet = ({ name, description, image, skills }) => {
 const DesignCard = ({ img: imageUrl, name, description }) => {
   const style = {
     image: {
-      outline: "1px solid red",
       backgroundImage: "url(" + imageUrl + ")"
     }
   };

@@ -293,15 +293,16 @@ button {
 // DesignCard styling
 .design-card {
   width: 350px;
-  height: 400px;
+  max-height: 450px;
+  overflow: hidden;
   margin: 50px 0;
-  // outline: 1px solid red;
   cursor: pointer;
   box-shadow: 10px 3rem 2.1rem rgba(69, 77, 93, 0.3);
 
   .image {
     max-width: 350px;
     height: 350px;
+    // visibility: hidden;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     background-size: auto 350px;
@@ -309,7 +310,6 @@ button {
     background-color: $primary;
     transition: all 0.5s ease;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-
     @media (max-width: 650px) {
       height: 300px;
       background-size: auto 300px;
@@ -321,11 +321,19 @@ button {
     background: white;
     font-family: "Book", $defaultFont;
     text-transform: lowercase;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+
+    // box-shadow: 0px 1rem 2.1rem rgba(69, 77, 93, 0.3);
+
     span {
-      font-size: 20px;
+      // font-size: 20px;
       font-family: "alegreya", $defaultFont;
       margin-right: 5px;
       color: $primary;
     }
   }
+}
+
+* {
+  // outline: 1px solid black;
 }

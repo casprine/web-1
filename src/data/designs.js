@@ -4,21 +4,22 @@ const Designs = [
     img:
       "https://cdn.dribbble.com/users/1805359/screenshots/4389341/homepage-82345497-1521865386.png",
     name: "Gamers Republic",
-    description: `Friday night designing
-    Found the illustration around and decided to use it `
+    description: `Friday night designing, found an  illustration around and decided to use it `
   },
   {
     id: 2,
     img:
       "https://cdn.dribbble.com/users/1805359/screenshots/4745901/jester.png",
     name: "Jester",
-    description: "An online curated site for books(WIP) "
+    description:
+      "a curated list of all your favourite developer/designers books all in a one page 😁 "
   },
   {
     id: 3,
     img: "https://cdn.dribbble.com/users/1805359/screenshots/4561384/kre.png",
     name: "Kree",
-    description: "Redesign of Kre's landing page."
+    description:
+      "second iteration of the Kree's website with insipiration from dribbble "
   },
   {
     id: 4,
@@ -33,14 +34,14 @@ const Designs = [
     img:
       "https://cdn.dribbble.com/users/1805359/screenshots/4353278/casprine_ui_designs-08.png",
     name: "Kree 101",
-    description: `first concept UI iteration for Kree`
+    description: `first concept UI iteration for Kree, the second iteration was used in favor of this.`
   },
   {
     id: 6,
     img:
       "https://cdn.dribbble.com/users/1805359/screenshots/4358529/casprine_ui_designs-07.png",
     name: "Keyfit",
-    description: "Gym UI design"
+    description: "gym ui design with illustration from @Kit8."
   }
 ];
 
