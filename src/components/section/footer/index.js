@@ -43,7 +43,7 @@ const Footer = () => (
           Twitter
         </a>
         <a
-          href="https://twitter.com/casprine_ix"
+          href="https://github.com/casprine"
           target="_blank"
           rel="noopener noreferrer"
           className="link-inverse"
