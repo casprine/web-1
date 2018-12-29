@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Header, Layout, Button } from "../../common/index";
+import { Header, Layout } from "../../common/index";
 import "./style.scss";
 
 const HomeHeader = () => {
@@ -35,13 +35,12 @@ const HomeHeader = () => {
           </div>
         </div>
         <div className="ca-homeHeader-footer center">
-          <span role="img" className="more">
+          <div role="img" className="more">
             <span> Scroll Down</span>
             <span role="img" className="scroll-down" aria-label="finger">
               👇
             </span>
-          </span>
-          <Button content="Hire Me 👨🏿‍💻" />
+          </div>
         </div>
       </div>
     </Fragment>

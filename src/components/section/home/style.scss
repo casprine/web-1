@@ -54,9 +54,11 @@
 
   &-footer {
     margin-top: auto;
+    margin-bottom: 20px;
+
     padding-bottom: 20px;
     .more {
-      margin-right: auto;
+      margin-left: auto;
       display: flex;
 
       span {

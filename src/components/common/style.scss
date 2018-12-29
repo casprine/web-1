@@ -23,6 +23,11 @@ button {
 
 // Header styling
 .ca-header {
+  outline: 1px solid red;
+
+  * {
+    outline: 1px solid red;
+  }
   .ca-routes {
     display: flex;
     width: 250px;
@@ -38,6 +43,7 @@ button {
   width: 40px;
   height: 40px;
   border: 2px solid black;
+  font-family: "Book";
   cursor: pointer;
   background: white;
   transition: 0.3s ease-in-out;

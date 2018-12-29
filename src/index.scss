@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "Book";
-  src: url("./assets/fonts/CircularBook.ttf");
+  src: url("./assets/fonts/ciruclar.ttf");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: "alegreya";
-  src: url("./assets/fonts/alegreya.ttf");
+  src: url("./assets/fonts/geo.ttf");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -107,7 +107,7 @@ ul {
   -webkit-transition: all 200ms ease;
   transition: all 200ms ease;
   cursor: pointer;
-  font-family: "Book" , $defaultFont;
+  font-family: "Book", $defaultFont;
 
   &:hover {
     padding-bottom: 4px;
