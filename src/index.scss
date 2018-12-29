@@ -76,7 +76,6 @@ code {
 .padding-side {
   width: 85vw;
   margin-right: auto;
-
   margin-left: auto;
 }
 .padding-top {
@@ -85,11 +84,7 @@ code {
 .padding-bottom {
   padding-bottom: 40px;
 }
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .center {
   display: flex;
   justify-content: center;
@@ -112,6 +107,7 @@ ul {
   -webkit-transition: all 200ms ease;
   transition: all 200ms ease;
   cursor: pointer;
+  font-family: "Book" , $defaultFont;
 
   &:hover {
     padding-bottom: 4px;
