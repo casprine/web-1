@@ -23,17 +23,13 @@ button {
 
 // Header styling
 .ca-header {
-  outline: 1px solid red;
+  margin-bottom: 40px;
 
-  * {
-    outline: 1px solid red;
-  }
   .ca-routes {
-    display: flex;
-    width: 250px;
-    justify-content: space-between;
-    align-content: center;
     margin-left: auto;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
   }
 }
 

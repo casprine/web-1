@@ -26,7 +26,7 @@ const Header = () => (
   <Fragment>
     <nav className="ca-header padding-top center">
       <Logo />
-      <ul className="ca-routes">
+      <div className="ca-routes">
         <NavLink activeClassName="active-link" className="link" to="/work">
           Work
         </NavLink>
@@ -36,7 +36,7 @@ const Header = () => (
         <NavLink activeClassName="active-link" className="link" to="/writings">
           Writings
         </NavLink>
-      </ul>
+      </div>
     </nav>
   </Fragment>
 );
