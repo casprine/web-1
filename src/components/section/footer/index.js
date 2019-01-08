@@ -5,7 +5,9 @@ import "./style.scss";
 const Footer = () => (
   <Fragment>
     <div className="footer">
-      <Logo />
+      <div className="pxw">
+        <Logo />
+      </div>
       <div className="text">
         Have a nice day
         <span role="img" aria-label="smile">
@@ -41,7 +43,7 @@ const Footer = () => (
           Twitter
         </a>
         <a
-          href="https://twitter.com/casprine_ix"
+          href="https://github.com/casprine"
           target="_blank"
           rel="noopener noreferrer"
           className="link-inverse"

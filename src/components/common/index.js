@@ -2,15 +2,19 @@ import React, { Fragment } from "react";
 import { NavLink, Link } from "react-router-dom";
 import "./style.scss";
 
-const Button = ({ content }) => (
-  <Fragment>
-    <button> {content} </button>
-  </Fragment>
-);
+const Button = ({ content }) => {
+  return (
+    <Fragment>
+      <a href="mailto:casprine.001@gmail.com?subject=Job Opportunity">
+        <button> {content} </button>
+      </a>
+    </Fragment>
+  );
+};
 
 const Logo = () => (
   <Fragment>
-    <Link to="/">
+    <Link href="/" to="/">
       <div className="ca-logo center">
         <div> C </div>
       </div>
@@ -22,41 +26,35 @@ const Header = () => (
   <Fragment>
     <nav className="ca-header padding-top center">
       <Logo />
-      <ul className="ca-routes">
+      <div className="ca-routes">
         <NavLink activeClassName="active-link" className="link" to="/work">
           Work
         </NavLink>
-        <NavLink activeClassName="active-link" className="link" to="/design">
+        {/* <NavLink activeClassName="active-link" className="link" to="/design">
           Design
-        </NavLink>
-        <NavLink activeClassName="active-link" className="link" to="/writings">
-          Writing
-        </NavLink>
-      </ul>
+        </NavLink> */}
+        <a href="https://casprine-blog.now.sh" className="link">
+          Writings
+        </a>
+      </div>
     </nav>
   </Fragment>
 );
 
-const Layout = ({ children, height }) => {
-  const LayoutStyle = {
-    wrapper: {
-      height: height + "vh"
-    }
-  };
-
+const Layout = ({ children }) => {
   return (
     <Fragment>
-      <div style={LayoutStyle.wrapper}>
-        <div className="padding-side">{children}</div>
+      <div className="padding-side">
+        <div>{children}</div>
       </div>
     </Fragment>
   );
 };
 
-const SectionHeader = ({ title, about, description, className }) => {
+const SectionHeader = ({ title, about, description }) => {
   return (
     <Fragment>
-      <div className={className + " section"}>
+      <div className="section">
         <div className="section-title"> {title}</div>
         <div className="section-about"> {about} </div>
         <div className="section-description">{description}</div>
@@ -73,18 +71,16 @@ const ProjectCard = ({ name, stacks, logoUrl: img, about, link }) => {
           <div className="project-details">
             <span className="name">{name}</span>
             <span>
-              <img src={img} alt="" />
+              <img src={img} alt={name} />
             </span>
           </div>
           <div className="project-description">{about}</div>
-          <div className="project-stack">
-            {stacks.map(stack => {
-              return (
-                <span className="stack" key={stack}>
-                  {stack}
-                </span>
-              );
-            })}
+          <div className="project-stack wrap">
+            {stacks.map((stack, i) => (
+              <span className="stack" key={i}>
+                {stack}
+              </span>
+            ))}
           </div>
         </div>
       </a>
@@ -92,4 +88,49 @@ const ProjectCard = ({ name, stacks, logoUrl: img, about, link }) => {
   );
 };
 
-export { Button, Logo, Header, Layout, SectionHeader, ProjectCard };
+const SkillSet = ({ name, description, skills }) => {
+  return (
+    <div className="skill">
+      <div className="skill-name"> {name} </div>
+      <div className="skill-description">{description} </div>
+
+      <div className="skill-skillsets">
+        {skills.map((skill, i) => (
+          <span className="skillset" key={i}>
+            {skill}
+          </span>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+const DesignCard = ({ img: imageUrl, name, description }) => {
+  const style = {
+    image: {
+      backgroundImage: "url(" + imageUrl + ")"
+    }
+  };
+
+  return (
+    <div className="design-card">
+      <div style={style.image} className="image" />
+      <div className="details">
+        <div>
+          <span>{name},</span>
+          {description}
+        </div>
+      </div>
+    </div>
+  );
+};
+export {
+  Button,
+  Logo,
+  Header,
+  Layout,
+  SectionHeader,
+  ProjectCard,
+  SkillSet,
+  DesignCard
+};

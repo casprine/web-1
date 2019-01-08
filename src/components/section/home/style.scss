@@ -3,34 +3,39 @@
 .ca-homeHeader {
   display: flex;
   flex-direction: column;
-  // outline: 1px solid red;
-  height: 100vh;
+  min-height: 100vh;
 
   &-content {
     margin-top: auto;
-    // outline: 1px solid red;
+    @media (max-width: 655px) {
+      margin-top: 70px;
+    }
     .ca-emoji {
       span {
         padding-left: 8px;
+        display: block;
         font-size: 50pt;
-        text-align: center;
         animation: waver 0.65s alternate infinite;
-        transform-origin: 50% 90%;
         animation-timing-function: ease-in-out;
+        width: 20px;
+        @media (max-width: 655px) {
+          font-size: 30pt;
+        }
       }
     }
 
     .ca-heading {
-      max-width: 800px;
       margin-bottom: 50px;
-
       &-big {
         margin-top: 0px;
         margin-bottom: 0px;
         padding-top: 10px;
         color: $primary;
         font-size: 60px;
-        line-height: 65px;
+        @media (max-width: 655px) {
+          font-size: 35px;
+          line-height: 45px;
+        }
       }
 
       .ca-sub-heading {
@@ -45,18 +50,47 @@
 
   &-footer {
     margin-top: auto;
+    margin-bottom: 20px;
+
     padding-bottom: 20px;
     .more {
-      margin-right: auto;
+      margin-left: auto;
+      display: flex;
+
+      span {
+        display: block;
+      }
+
+      .scroll-down {
+        animation: scroller 0.5s alternate infinite;
+        position: relative;
+        cursor: pointer;
+        display: block;
+      }
+      @media (max-width: 655px) {
+        display: none;
+      }
     }
   }
 }
 
+// Animations
+
 @keyframes waver {
   0% {
-    transform: rotate(-25deg);
+    transform: rotate(10deg);
   }
   100% {
-    transform: rotate(30deg);
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes scroller {
+  0% {
+    transform: translate(0, 0px);
+  }
+
+  100% {
+    transform: translate(0, -5px);
   }
 }

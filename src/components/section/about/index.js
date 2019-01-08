@@ -1,53 +1,32 @@
-import React, { Fragment, Component } from "react";
-import { SectionHeader, Layout } from "../../common/index";
+import React, { Fragment } from "react";
+import { SectionHeader, Layout, SkillSet } from "../../common/index";
 import data from "../../../data/index";
-
-import "./style.scss";
-
-const SkillSet = ({ name, description, image, skills }) => {
+const AboutHeader = () => {
+  const { HeadersData } = data;
   return (
-    <div className="skill">
-      <div className="skill-icon">
-        <img src={image} alt="" className="img" />
-      </div>
-      <div className="skill-name"> {name} </div>
-      <div className="skill-description">{description} </div>
-
-      <div className="skill-skillsets">
-        {skills.map(skill => {
-          return (
-            <span className="skillset" key={skill.id}>
-              <img src={skill.imgLink} alt="" />
-            </span>
-          );
-        })}
-      </div>
-    </div>
+    <Fragment>
+      <SectionHeader {...HeadersData[0]} />
+    </Fragment>
   );
 };
 
-class About extends Component {
-  render() {
-    const { SkillSetData, HeadersData } = data;
-    return (
-      <Fragment>
-        <div className="about">
-          <SectionHeader {...HeadersData[0]} />
-          <div className="about-skills">
-            {SkillSetData.map(data => {
-              return <SkillSet {...data} key={data.id} />;
-            })}
-          </div>
-        </div>
-      </Fragment>
-    );
-  }
-}
-
+const Skills = () => {
+  const { SkillSetData } = data;
+  return (
+    <Fragment>
+      <div className="grid-fixed">
+        {SkillSetData.map(data => {
+          return <SkillSet {...data} key={data.id} />;
+        })}
+      </div>
+    </Fragment>
+  );
+};
 const AboutSectionWithLayout = () => (
   <Fragment>
-    <Layout height={100}>
-      <About />
+    <Layout>
+      <AboutHeader />
+      <Skills />
     </Layout>
   </Fragment>
 );

@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Header, Layout, Button } from "../../common/index";
+import { Header, Layout } from "../../common/index";
 import "./style.scss";
 
 const HomeHeader = () => {
@@ -16,10 +16,8 @@ const HomeHeader = () => {
 
           <div className="ca-heading">
             <div className="ca-heading-big">
-              Hi there, I'm Casprine, designer,
-            </div>
-            <div className="ca-heading-big">
-              frontend developer and ui enthusiast.
+              Hi there, I'm Casprine, an independent designer, frontend
+              developer and ui enthusiast.
             </div>
 
             <div className="ca-sub-heading">
@@ -34,13 +32,13 @@ const HomeHeader = () => {
             </div>
           </div>
         </div>
-
         <div className="ca-homeHeader-footer center">
-          <span role="img" className="more">
-            {" "}
-            Scroll Down👇{" "}
-          </span>
-          <Button content="Hire Me 👨🏿‍💻" />
+          <div role="img" className="more">
+            <span> Scroll Down</span>
+            <span role="img" className="scroll-down" aria-label="finger">
+              👇
+            </span>
+          </div>
         </div>
       </div>
     </Fragment>
@@ -50,7 +48,7 @@ const HomeHeader = () => {
 const HomeHeaderWithLayout = () => {
   return (
     <Fragment>
-      <Layout height={100}>
+      <Layout>
         <HomeHeader />
       </Layout>
     </Fragment>
