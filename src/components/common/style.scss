@@ -213,7 +213,7 @@ button {
 
 // skill styling
 .skill {
-  padding: 15px;
+  padding: 10px;
   background: white;
   border: 5px solid $grey;
 
@@ -242,6 +242,7 @@ button {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    outline: 1px solid red;
 
     .skillset {
       margin: 5px;
