@@ -1,7 +1,6 @@
 import React, { Fragment } from "react";
 import { SectionHeader, Layout, SkillSet } from "../../common/index";
 import data from "../../../data/index";
-
 const AboutHeader = () => {
   const { HeadersData } = data;
   return (
@@ -15,7 +14,7 @@ const Skills = () => {
   const { SkillSetData } = data;
   return (
     <Fragment>
-      <div className="grid-3">
+      <div className="grid-fixed">
         {SkillSetData.map(data => {
           return <SkillSet {...data} key={data.id} />;
         })}
