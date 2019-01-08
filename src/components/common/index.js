@@ -30,12 +30,12 @@ const Header = () => (
         <NavLink activeClassName="active-link" className="link" to="/work">
           Work
         </NavLink>
-        <NavLink activeClassName="active-link" className="link" to="/design">
+        {/* <NavLink activeClassName="active-link" className="link" to="/design">
           Design
-        </NavLink>
-        <NavLink activeClassName="active-link" className="link" to="/writings">
+        </NavLink> */}
+        <a href="https://casprine-blog.now.sh" className="link">
           Writings
-        </NavLink>
+        </a>
       </div>
     </nav>
   </Fragment>

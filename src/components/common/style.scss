@@ -27,9 +27,13 @@ button {
 
   .ca-routes {
     margin-left: auto;
-    width: 20%;
+    min-width: 13%;
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 823px) {
+      width: 35%;
+    }
   }
 }
 
