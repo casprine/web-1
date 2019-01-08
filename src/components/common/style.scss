@@ -126,8 +126,6 @@ button {
 // ProjectCard styling
 .project {
   background: white;
-  max-width: 340px;
-  margin: 20px 0;
   border-top: 5px solid $primary;
   padding: 1.5rem 1.5rem;
   font-family: "Book", $defaultFont;
@@ -215,12 +213,8 @@ button {
 
 // skill styling
 .skill {
-  width: 350px;
-  min-height: 230px;
-  max-height: auto;
   padding: 15px;
   background: white;
-  margin: 10px 0;
   border: 5px solid $grey;
 
   &-name {
