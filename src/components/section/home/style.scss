@@ -25,20 +25,16 @@
     }
 
     .ca-heading {
-      max-width: 800px;
       margin-bottom: 50px;
-
       &-big {
         margin-top: 0px;
         margin-bottom: 0px;
         padding-top: 10px;
         color: $primary;
         font-size: 60px;
-        line-height: 65px;
-
         @media (max-width: 655px) {
           font-size: 35px;
-          line-height: 40px;
+          line-height: 45px;
         }
       }
 

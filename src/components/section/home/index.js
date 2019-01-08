@@ -16,10 +16,8 @@ const HomeHeader = () => {
 
           <div className="ca-heading">
             <div className="ca-heading-big">
-              Hi there, I'm Casprine, designer,
-            </div>
-            <div className="ca-heading-big">
-              frontend developer and ui enthusiast.
+              Hi there, I'm Casprine, an independent designer, frontend
+              developer and ui enthusiast.
             </div>
 
             <div className="ca-sub-heading">
